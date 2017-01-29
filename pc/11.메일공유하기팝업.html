@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>숲이 들려주는 피부 이야기, 누리숲입니다.</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://static.nurisoop.co.kr/images/img/nurisoop.ico" />
+<link rel="stylesheet" type="text/css" href="http://static.nurisoop.co.kr/css/reset.css">
+<link rel="stylesheet" type="text/css" href="http://static.nurisoop.co.kr/css/layout.css?ver=20161215">
+<link rel="stylesheet" type="text/css" href="http://static.nurisoop.co.kr/css/style.css?ver=20161215">
+<script src="http://static.nurisoop.co.kr/js/jquery.min.js"></script>
+<script src="http://static.nurisoop.co.kr/js/common.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+function chkSentMail(form) {
+}
+</script>
+<!---팝업사이즈 737x640 스크롤없이 고정--->
+ <div id="pop_write">
+	<img src="http://static.nurisoop.co.kr/images/img/mail_write_tit.jpg" alt="메일 공유하기">
+	<form name="snsSentMailForm" method="post" onSubmit="return chkSentMail(this);">
+	<input type="hidden" name="goods_img" value="http://static.nurisoop.co.kr/images/goods/seabuck/410.jpg" />
+	<input type="hidden" name="goodsno" value="25" />
+	<input type="hidden" name="goodsnm" value="발효씨벅톤 99오일" />
+	<input type="hidden" name="goods_price" value="9900" />
+	<div class="wrap">
+		<table class="review_t">
+		<colgroup>
+		<col width="150">
+		<col width="525">
+		<col width="20">
+		</colgroup>
+		<tr><td colspan="3" height="8"></td></tr>
+		<tr>
+		<td height="26" class="p_l_20"><img src="http://static.nurisoop.co.kr/images/img/bullet_bird.jpg"> 상품 URL</td>
+		<td><a href="http://www.nurisoop.co.kr/partner.php?pid=s_mail_25" target="_blank">http://www.nurisoop.co.kr/partner.php?pid=s_mail_25</a></td>
+		</tr>
+		<tr><td colspan="3" height="8"></td></tr>
+		<tr>
+		<td height="26" class="p_l_20"><img src="http://static.nurisoop.co.kr/images/img/bullet_bird.jpg"> 친구 이메일</td>
+		<td>
+			<input name="get_email" class="input" type="text" style="width:200px" maxlength="60" value=""><br/>
+						* 입력하신 메일주소는 마케팅 용도로 사용되지 않습니다.
+		</td>
+		<tr>
+		<td height="60" class="p_l_20"><img src="http://static.nurisoop.co.kr/images/img/bullet_bird.jpg"> 이름(보내는이)</td>
+		<td>
+			<input name="send_name" class="input" type="text" style="width:85px" maxlength="30"value=""><br/>
+					</td>
+		<tr><td colspan="3" height="8"></td></tr>
+		<tr>
+		<td height="26" class="p_l_20"><img src="http://static.nurisoop.co.kr/images/img/bullet_bird.jpg"> 이메일(보내는이)</td>
+		<td>
+			<input name="send_email" class="input" type="text" style="width:200px" maxlength="60" value=""><br/>
+					</td>
+		<tr>
+		<td colspan="3" align="center" style="height:100px;">
+		<a href="javascript:self.close();"><img src="http://static.nurisoop.co.kr/images/img/btn_cancel.jpg" alt="작성취소"></a>
+		<input type="image" src="http://static.nurisoop.co.kr/images/img/btn_ok.jpg" alt="글올리기">
+		</td>
+		</tr>
+		</table>
+	</div>
+	</form>
+ </div>
+ </body>
+</html>

@@ -1,0 +1,889 @@
+
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<link rel="shortcut icon" type="image/x-icon" href="http://static.nurisoop.co.kr/images/img/nurisoop.ico" />
+<title>할인쿠폰내역</title>
+
+<meta name="title" content="할인쿠폰내역" /> 
+<meta name="author" content="할인쿠폰내역"/>
+<meta name="subject" content="숲이 들려주는 피부이야기 착한성분 착한가격 천연화장품 누리숲 nurisoop" /> 
+<meta name="description" content="숲이 들려주는 피부이야기 착한성분 착한가격 천연화장품 누리숲 nurisoop">
+<meta name="keywords" content="숲이 들려주는 피부이야기 착한성분 착한가격 천연화장품 누리숲 nurisoop"/>
+<meta name="classification" content="화장품, 화장소품"/>
+
+
+<meta name="naver-site-verification" content="7ac35ac4c02879644169c47cbe25cb6847e8705f"/>
+
+<!-- 오픈그래프 -->
+<meta property="fb:app_id" content="423544954497176" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="할인쿠폰내역">
+<meta property="og:description" content="숲이 들려주는 피부이야기 착한성분 착한가격 천연화장품 누리숲 nurisoop">
+<meta property="og:image" content="http://static.nurisoop.co.kr/images/img/logo.png">
+<meta property="og:url" content="http://www.nurisoop.co.kr/mypage/coupon">
+<meta property="og:site_name" content="누리숲">
+<!-- 오픈그래프 -->
+
+<!-- 안드로이드 앱 -->
+<meta property="al:android:url" content="market://details?id=kr.co.nurisoop.makeup.app ">
+<meta property="al:android:app_name" content="누리숲">
+<meta property="al:android:package" content="kr.co.nurisoop.makeup.app">
+<meta property="al:web:url" content="http://nurisoop.co.kr">
+<!-- 안드로이드 앱 -->
+
+<!-- 아이폰 앱 -->
+<meta property="al:ios:url" content="itms-apps://itunes.apple.com/app/id1146332657?mt=8" />
+<meta property="al:ios:app_store_id" content="1146332657" />
+<meta property="al:ios:app_name" content="누리숲" />
+<!-- 아이폰 앱 -->
+
+<!-- Android icon --> 
+<link rel="shortcut icon" href="http://static.nurisoop.co.kr/images/m/icon_nurisoop128x128.png" /> 
+<!-- iPhone icon --> 
+<link rel="apple-touch-icon" sizes="57x57" href="http://static.nurisoop.co.kr/images/m/icon_nurisoop57x57.png" /> 
+<!-- iPad icon --> 
+<link rel="apple-touch-icon" sizes="72x72" href="http://static.nurisoop.co.kr/images/m/icon_nurisoop72x72.png" /> 
+<!-- iPhone icon(Retina) --> 
+<link rel="apple-touch-icon" sizes="114x114" href="http://static.nurisoop.co.kr/images/m/icon_nurisoop114x114.png" /> 
+<!-- iPad icon(Retina) --> 
+<link rel="apple-touch-icon" sizes="144x144" href="http://static.nurisoop.co.kr/images/m/icon_nurisoop144x144.png" /> 
+
+
+<link rel="stylesheet" type="text/css" href="http://static.nurisoop.co.kr/css/reset.css">
+<link rel="stylesheet" type="text/css" href="http://static.nurisoop.co.kr/css/layout_20170105.css?ver=1484558506">
+<link rel="stylesheet" type="text/css" href="http://static.nurisoop.co.kr/css/style.css?ver=1484558506">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+
+<script src="http://static.nurisoop.co.kr/js/jquery.min.js"></script>
+<script src="http://static.nurisoop.co.kr/js/order_t.js"></script>
+<script src="http://static.nurisoop.co.kr/js/common.js"></script>
+<script src="http://static.nurisoop.co.kr/js/jquery.cookie.min.js"></script>
+<script src="http://static.nurisoop.co.kr/js/cookie.js"></script>
+
+<!-- 2016 09 01 레이어팝업 -->
+
+
+<!-- 네이버 유입경로스크립트 -->
+<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {}; 
+wcs_add["wa"] = "s_379b99bd73f6"; 
+wcs.inflow("nurisoop.co.kr");
+</script>
+<!-- 네이버 유입경로스크립트 -->
+
+<!--// 160725 박혜나 주임 요청 : 모비온 모든페이지 //-->
+<!-- Withpang Tracker v3.0 [공용] start -->
+  <script src="http://cdn.megadata.co.kr/js/enliple_min2.js"></script>
+  <script type="text/javascript">
+  <!--
+  	var rf = new EN();
+  	rf.setData("sc", encodeURIComponent(""));
+  	rf.sendRf();
+  //-->
+  </script>
+<!-- Withpang Tracker v3.0 [공용] end -->
+<!--// 160725 박혜나 주임 요청 : 모비온 모든페이지 End //-->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var all_width = $(document).width();
+	if(all_width < 1100) { all_width = 1100; }
+	var quickbn_top = 216;
+	var quickbn_left = Math.floor(all_width / 2) + 550 + 10;
+	//$("#quickbn").css({"left": quickbn_left + "px", "top": quickbn_top + "px"});
+
+	$("#sub_menu > dl > dd > .curs").css("display", "block");
+
+	$("#gnb > ul > li > a").mouseover(function(){
+		var no = $(this).parent().index();
+		$("#sub_menu > dl > dd > ul").css("display", "none");
+		$("#sub_menu > dl > dd > ul:eq("+no+")").css("display", "block");
+	});
+	$("#sub_menu > dl > dd > ul").mouseover(function(){
+		var name = $(this).attr("class");
+		$("#gnb_"+name).addClass("ov");
+		$("#sub_menu > dl > dd > ul").css("display", "none");
+		$(this).css("display", "block");
+	});
+	$("#gnb").mouseout(function(){
+		$("#gnb > ul > li").removeClass("ov");
+		$("#sub_menu > dl > dd > ul").css("display", "none");
+		$("#sub_menu > dl > dd > .curs").css("display", "block");
+	});
+	
+	$("#gnb_bottom_line").mouseout(function(){
+		$("#gnb > ul > li").removeClass("ov");
+		$("#sub_menu > dl > dd > ul").css("display", "none");
+		$("#sub_menu > dl > dd > .curs").css("display", "block");
+	});
+	/*
+	$("#sub_menu").mouseout(function(){
+		$("#gnb > ul > li").removeClass("ov");
+		$("#sub_menu > dl > dd > ul").css("display", "none");
+	});
+	*/
+});
+</script>
+
+</head>
+<body>
+
+
+
+
+
+	<style>
+	.cnt_table {font-size:11px;border:1px solid #ccc;border-spacing:none;border-collapse:collapse}
+	.cnt_table td {border:1px solid #ccc;text-align:right;padding:1px 3px}
+	.cnt_table th {border:1px solid #ccc;padding:1px 3px;font-weight:bold;}
+	</style>
+	<div style='position:absolute;top:30px;right:100px; text-align:left; background-color:#FFF;'>
+			<p><<<a href='http://www.nurisoop.co.kr/siteProc/ebiz_counter_list' target='_blank'>카운터 전체보기</a>>></p>
+			<table class='cnt_table' style=''>
+				<tr>
+					<th>웹</th>
+					<th>방문자</th>
+					<th>페이지뷰</th>
+				</tr>
+				<tr>
+					<th>그제</th>
+					<td>2,438</td>
+					<td>14,706</td>
+				</tr>
+				<tr>
+					<th>어제</th>
+					<td>2,601</td>
+					<td>16,047</td>
+				</tr>
+				<tr>
+					<th>오늘</th>
+					<td>2,026</td>
+					<td>12,247</td>
+				</tr>
+				<tr>
+					<th>3일간</th>
+					<td>7,065</td>
+					<td>43,000</td>
+				</tr>
+			</table>
+			<table class='cnt_table' style='margin-top:6px;'>
+				<tr>
+					<th>모바일</th>
+					<th>방문자</th>
+					<th>페이지뷰</th>
+				</tr>
+				<tr>
+					<th>그제</th>
+					<td>704</td>
+					<td>3,959</td>
+				</tr>
+				<tr>
+					<th>어제</th>
+					<td>694</td>
+					<td>3,778</td>
+				</tr>
+				<tr>
+					<th>오늘</th>
+					<td>505</td>
+					<td>2,851</td>
+				</tr>
+				<tr>
+					<th>3일간</th>
+					<td>1,903</td>
+					<td>10,588</td>
+				</tr>
+			</table>
+			<table class='cnt_table' style='margin-top:6px;'>
+				<tr>
+					<th>앱(A)</th>
+					<th>방문자</th>
+					<th>페이지뷰</th>
+				</tr>
+				<tr>
+					<th>그제</th>
+					<td>135</td>
+					<td>1,783</td>
+				</tr>
+				<tr>
+					<th>어제</th>
+					<td>158</td>
+					<td>2,239</td>
+				</tr>
+				<tr>
+					<th>오늘</th>
+					<td>109</td>
+					<td>1,367</td>
+				</tr>
+				<tr>
+					<th>3일간</th>
+					<td>402</td>
+					<td>5,389</td>
+				</tr>
+			</table>
+			<table class='cnt_table' style='margin-top:6px;'>
+				<tr>
+					<th>앱(I)</th>
+					<th>방문자</th>
+					<th>페이지뷰</th>
+				</tr>
+				<tr>
+					<th>그제</th>
+					<td>60</td>
+					<td>493</td>
+				</tr>
+				<tr>
+					<th>어제</th>
+					<td>64</td>
+					<td>590</td>
+				</tr>
+				<tr>
+					<th>오늘</th>
+					<td>57</td>
+					<td>547</td>
+				</tr>
+				<tr>
+					<th>3일간</th>
+					<td>181</td>
+					<td>1,630</td>
+				</tr>
+			</table>
+	</div>
+			
+
+
+<style type="text/css">
+#header #gnb ul li.cur a {display:block; padding-top:3px; height:35px; border-radius:10px; background:#76a33d; color:#f9eee4}
+#header #sub_menu dl dd ul.curs{display:block;}
+#header #sub_menu dl dd ul .curt a{color:#ffdf10; font-weight:600; text-decoration:none}
+</style>
+	<script type="text/javascript">
+	function hide_app33_banner() {
+		$.cookie('app33_topbar','none',{expires:1,path:'/'});
+		$("#app33_topbar").hide();
+	}
+	</script>
+	<!--상단띠배너-->
+    <div id="app33_topbar" style="width:100%; height:80px; text-align:center; background-color:#acf9ff;">
+	    <a href="/event/view/88"><img src="http://static.nurisoop.co.kr/images/event/33app/top_33app.jpg" alt="상단띠배너"></a>
+	    <div style="position:absolute; top:26px; right:26px;">
+        	<a href="javascript:hide_app33_banner();"><img src="http://static.nurisoop.co.kr/images/event/33app/close.gif" alt="닫기"></a>
+		</div>
+    </div>
+	 
+
+	<!--최상단-->
+	<div id="top">
+		<div class="top_menu">
+			<ul class="login_menu">
+											<li class="member00"><a href="javascript:void(0);" onClick="memberLevelInfoOpen(event);" title="회원등급별 혜택알아보기"><img src="http://static.nurisoop.co.kr/images/img/member_icon00.png" alt="NEW"> Jjoon2님</a></li>
+
+				<li><a href="/user/logout" title="로그아웃">로그아웃</a></li>
+				<li class="line3">|</li>
+				<li><a href="/mypage" title="마이페이지">마이페이지</a></li>
+				<li class="line3">|</li>
+							<li><a href="/mypage/orderList" title="주문배송">주문배송</a></li>
+				<li class="line3">|</li>
+				<li><a href="/mypage/cartList" title="장바구니">장바구니</a></li>
+			</ul>
+		</div>
+		<div class="top_link">
+			<div class="left">
+				<p>
+					<a href="http://blog.naver.com/nurisoop1004" target="_blank" title="블로그"><img src="http://static.nurisoop.co.kr/images/img/btn_sns_b.jpg" alt="블로그"></a>
+					<a href="https://www.facebook.com/nurisoop7979" target="_blank" title="페이스북"><img src="http://static.nurisoop.co.kr/images/img/btn_sns_f.jpg" alt="페이스북"></a>
+					<a href="https://twitter.com/nurisoop" target="_blank" title="트위터"><img src="http://static.nurisoop.co.kr/images/img/btn_sns_t.jpg" alt="트위터"></a>
+					<a href="http://goto.kakao.com/@누리숲" target="_blank" title="카카오톡"><img src="http://static.nurisoop.co.kr/images/img/btn_sns_k.jpg" alt="카카오톡"></a>
+					<a href="https://story.kakao.com/ch/nuritalk" target="_blank" title="카카오스토리"><img src="http://static.nurisoop.co.kr/images/img/btn_sns_ks.jpg" alt="카카오스토리"></a>
+				</p>
+				<p><a href="/event/view/5" title="이벤트"><img src="http://static.nurisoop.co.kr/images/img/bn_topleft.png" alt="누리숲 가입시"></a></p>
+			</div>
+						<div class="center"><a href="http://www.nurisoop.co.kr" title="홈"><img src="http://static.nurisoop.co.kr/images/img/logo.png" alt="누리숲 로고"></a></div>
+						<div class="right">
+				<form name="gnbSearchForm" method="get" action="/shop/sList2/">
+					<table class="search_t">
+						<colgroup>
+							<col width="29">
+							<col width="154">
+						</colgroup>
+						<tr>
+							<td height="26"></td>
+							<td><input name="srchText" class="search_input" style="width:150px" type="text" maxlength="40" value=""></td>
+						</tr>
+					</table>
+					<input type="image" src="http://static.nurisoop.co.kr/images/img/search_img02.jpg" style="float:left">
+				</form>
+			</div>
+		</div>
+		<!--누리숲 회원등급별 혜택안내-->
+		<div style="position:absolute; left:50%; height:0px;">
+		<div id="memberClass_pop" style="position:absolute;display:none;left:-436px;top:20px;z-index:1000">
+			<div class="title">누리숲 회원등급별 혜택안내 <a href="javascript:layerClose('memberClass_pop');" title="닫기"><img src="http://static.nurisoop.co.kr/images/img/btn_close2.jpg" style="float:right" /></a></div>
+			<img src="http://static.nurisoop.co.kr/images/img/memberClass.jpg" alt="누리숲 회원등급별 혜택안내" />
+			<p>
+				- 모든 구매금액은 배송완료 기준입니다.<br/>
+				- 배송비는 구매금액에서 제외됩니다.<br/>
+				- 할인이벤트 상품 구매시 할인된 가격으로 적용됩니다.
+			</p>
+		</div>
+		</div>
+		<!--// 누리숲 회원등급별 혜택안내-->
+	</div>
+	<!--top end-->
+
+
+	<style type="text/css">
+	/*#header #gnb UL LI { width:120px; }*/
+	</style>
+	<div id="wrapper">
+					<!--추천인코드popup-->
+			<div id="fr_eventPopupWrap" style="display:none;">
+				<div class="fr_eventPopup">
+					<p class="couponImg"><img src="http://static.nurisoop.co.kr/images/event/20161129/fr_event_img_ss.jpg" /></p>
+					<p class="green_txt">추천인코드를 입력해 주시면
+					<br/>쿠폰 3종세트가 발급됩니다.
+					</p>
+					<p class="fr_codeWrite"><input type="text" value="추천인코드를 입력해주세요" name=""  /></p>
+					<p class="fr_code_Btn">
+						<input type="button" value="건너뛰기" name="" class="fr_passBtn" />
+						<input type="button" value="확 인" name="" class="fr_okBtn" />
+					</p>
+				</div>
+			</div>
+
+		
+		<div id="header">
+			<!--메인메뉴-->
+			<div id="gnb">
+				<ul>
+					<li id="gnb_nurisoop" ><a href="/company/brand" title="누리숲 소개">누리숲 소개</a></li>
+					<li id="gnb_goods_01" ><a href="/shop/sList/001/" title="기능별">기능별</a></li>
+					<li id="gnb_goods_02" ><a href="/shop/sList/002/" title="피부타입별">피부타입별</a></li>
+					<li id="gnb_goods_03" ><a href="/shop/sList/006/" title="성분별">성분별</a></li>
+										<li id="gnb_goods_04" ><a href="/shop/sList/005/" title="세트상품">세트상품</a></li>
+										<li id="gnb_event" ><a href="/event" title="이벤트">이벤트</a></li>
+					<li id="gnb_review" ><a href="/community/photo" title="커뮤니티">커뮤니티</a></li>
+					<li id="gnb_customer" ><a href="/customer/notice" title="고객센터">고객센터</a></li>
+				</ul>
+			</div>
+			<!--서브메뉴-->
+			<div id="sub_menu">
+				<dl>
+					<dt class="hidden">서브메뉴</dt>
+					<dd>
+						<ul class="nurisoop " style="display:none;">
+							<li ><a href="/company/brand">브랜드 스토리</a></li>
+							<li ><a href="/company/news">누리숲 뉴스</a></li>
+						</ul>
+						<ul class="goods_01 " style="display:none">
+							<li ><a href="/shop/sList/001002/">스킨/로션</a></li><li ><a href="/shop/sList/001003/">크림/앰플/오일</a></li><li ><a href="/shop/sList/001007/">썬크림/비비크림</a></li><li ><a href="/shop/sList/001004/">클렌징/팩/각질제거</a></li><li ><a href="/shop/sList/001005/">세트상품</a></li><li ><a href="/shop/sList/001008/">마스크팩</a></li><li ><a href="/shop/sList/001009/">바디</a></li><li ><a href="/shop/sList/001006/">화장소품</a></li>						</ul>
+						<ul class="goods_02 " style="display:none">
+							<li ><a href="/shop/sList/002004/">지성</a></li><li ><a href="/shop/sList/002005/">민감성</a></li><li ><a href="/shop/sList/002003/">복합성</a></li><li ><a href="/shop/sList/002002/">건성</a></li>						</ul>
+						<ul class="goods_03 " style="display:none">
+						<li  ><a href="/shop/sList/006002/">히알루론산</a></li><li  ><a href="/shop/sList/006011/">대나무</a></li><li  ><a href="/shop/sList/006003/">프로폴리스</a></li><li class='long' ><a href="/shop/sList/006008/">어성초/EGCG</a></li><li  ><a href="/shop/sList/006006/">병풀</a></li><li  ><a href="/shop/sList/006012/">아로니아</a></li><li class='long' ><a href="/shop/sList/006005/">EGF</a></li><li class='long' ><a href="/shop/sList/006009/">씨벅톤(산자나무)</a></li><li class='short' ><a href="/shop/sList/006001/">효모</a></li><li class='short' ><a href="/shop/sList/006013/">봉독</a></li><li  ><a href="/shop/sList/006007/">녹차</a></li><li  ><a href="/shop/sList/006014/">갈락토미세스</a></li><li  ><a href="/shop/sList/006015/">세라마이드</a></li><li  ><a href="/shop/sList/006016/">스쿠알란</a></li><li class='long' ><a href="/shop/sList/006017/">나이아신아마이드</a></li><li  ><a href="/shop/sList/006018/">쉐어버터</a></li><li  ><a href="/shop/sList/006019/">알로에</a></li><li class='long' ><a href="/shop/sList/006020/">판테놀</a></li><li class='short' ><a href="/shop/sList/006022/">비피다</a></li><li style='width:150px' ><a href="/shop/sList/006024/">펩타이드</a></li><li  ><a href="/shop/sList/006023/">해바라기씨오일</a></li>						</ul>
+						<ul class="goods_04 " style="display:none; width:1100px; margin-left:30px;">
+						<li ><a href="/shop/sList/005010/" >포레스트 라인</a></li><li ><a href="/shop/sList/005009/" >수분관리 라인</a></li><li ><a href="/shop/sList/005006/" >트럽케어 라인</a></li><li ><a href="/shop/sList/005004/" >누리촉촉 라인</a></li><li ><a href="/shop/sList/005003/" >재생관리 라인</a></li><li ><a href="/shop/sList/005002/" >각질관리 라인</a></li><li ><a href="/shop/sList/005001/" >대나무숲 라인</a></li><li ><a href="/shop/sList/005011/" >아로니아 라인</a></li><li ><a href="/shop/sList/008/" >기념일 선물세트</a></li>						</ul>
+						<ul class="event " style="display:none;">
+							<li ><a href="/event/index">진행중인 이벤트</a></li>
+							<li ><a href="/event/attendance">출첵 이벤트</a></li>
+							<li ><a href="/event/index/?type=end">지난 이벤트</a></li>
+							<li ><a href="/event/winners">당첨자 발표</a></li>
+						</ul>
+						<ul class="review " style="display:none;">
+							<li ><a href="/community/photo">포토리뷰</a></li>
+							<li ><a href="/community/review">사용후기</a></li>
+							<li ><a href="/community/qna">상품QnA</a></li>
+						</ul>
+						<ul class="customer " style="display:none;">
+							<li ><a href="/customer/notice">공지사항</a></li>
+							<li ><a href="/customer/faq">자주하는 질문</a></li>
+							<li ><a href="/customer/howto">이용안내</a></li>
+							<li ><a href="/customer/sample">무료샘플신청</a></li>
+							<li ><a href="/customer/qnaList">1:1 문의하기</a></li>
+							<li ><a href="/customer/ingre">성분사전</a></li>
+							<li class="last "><a href="/customer/coupon">쿠폰사용방법</a></li>
+						</ul>
+						<!-- 기념일 메뉴 설정 -->
+											</dd>
+				</dl>
+			</div>
+			<div id="gnb_bottom_line" style="clear:both;">&nbsp;</div>
+		</div>
+		<!--header end-->
+
+	<!-- 우측 사이드 배너 -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			var chk = $(this).scrollTop();
+			if(chk > 220) { chk = chk + 20; }
+			else { chk = 220; }
+			// 최상단에 SNS이벤트 배너가 출력될 경우 배너높이만큼 더해줌.
+			if($("#snsBN_box").height() && $("#snsBN_box").css("display") == "block") { 
+				var height = $("#snsBN_box").height();
+				chk = chk + height; 
+			}
+			var move_top = chk + "px";
+			$("#quickbn2").stop().animate({top:move_top}, 700);
+			$("#scrollBN2").stop().animate({top:move_top}, 700);
+		});
+	});
+	</script>
+	<div id="quickbn">
+		<div id="quickbn2" style="top:220px;">
+			<p style="margin-bottom:10px;"><a href="/customer/sample"><img src="http://static.nurisoop.co.kr/images/img/wing_bn_sample.jpg" alt="전상품 무료샘플신청하기"></a></p>
+			<p style="margin-bottom:10px;"><a href="/event/kakao" target="_blank"><img src="http://static.nurisoop.co.kr/images/img/kakao_friends_bn.jpg"></a></p>
+			<div id="typeMenu">
+				<ul>
+					<li><img src="http://static.nurisoop.co.kr/images/img/typeMenu_img01.jpg" alt="피부타입별상품보기"></li>
+					<li class="btn01"><a href="/shop/sList/002004"></a></li>
+					<li class="btn02"><a href="/shop/sList/002005/"></a></li>
+					<li class="btn03"><a href="/shop/sList/002003/"></a></li>
+					<li class="btn04"><a href="/shop/sList/002002/"></a></li>
+					<li><img src="http://static.nurisoop.co.kr/images/img/typeMenu_img02.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 우측 사이드 배너 END -->
+
+
+
+
+	<!---우측 퀵메뉴--->
+	<script type="text/javascript">
+	var quickMode	= 1;
+	function quickOnOff() {
+		quickMode	= parseInt($.cookie("quickMenu"));
+		if(quickMode > 0) {
+			quickMode = 0;
+			//$("#quickMN").css("right", "0px");
+			$("#quickMN_BG").show();
+			$("#quickMN_BG").animate({"width":"94px", "right":"0px"}, 500);
+			$("#quickMN").animate({"right":"0px"}, 500);
+			$(".slideBtn IMG").attr("src", "http://static.nurisoop.co.kr/images/img/btn_quickMN_close.png");
+		} else {
+			quickMode = 1;
+			//$("#quickMN").css("right", "-95px");
+			$("#quickMN").animate({"right":"-95px"}, 500);
+			$("#quickMN_BG").animate({"width":"0px"}, 500, function() {
+				$("#quickMN_BG").hide();
+			});
+			$(".slideBtn IMG").attr("src", "http://static.nurisoop.co.kr/images/img/btn_quickMN_open.png");
+		}
+		$.cookie("quickMenu", quickMode, { expires: 1, path: "/" });
+	}
+	function quickbn_goods(page) {
+		var all_page = parseInt($(".q_page").text());
+		var view = parseInt($(".q_view_page").text());
+		var move_page = 1;
+		if(page == 'prev')  {
+			if(view <= 1) { move_page = 1; }
+			else  { move_page = view - 1; }
+		}
+		else if(page == 'next')  {
+			if(view >= all_page) { move_page = all_page; }
+			else { move_page = view + 1; }
+		}
+		$(".q_view_page").text(move_page);
+		var move_top = (move_page-1) * 60;
+		$("#today_list").css("top", "-"+move_top+"px");
+	}
+	
+	var winTop, setTop, curTop;
+	$(window).scroll(function(){
+		winTop	= $(window).scrollTop();
+		if(winTop <= 203) {
+			$("#quickMN_BG").css("top", "203px");
+			$("#quickMN_BG").css("position", "absolute");
+		} else {
+			$("#quickMN_BG").css("top", "0px");
+			$("#quickMN_BG").css("position", "fixed");
+		}
+	});
+	</script>
+	
+	<div id="quickMN_BG" class="c_quickMN" style="position:absolute; top:203px; right:0px; height:100%; border-top:1px solid #867767; border-left:1px solid #867767; background:#938270;width:94px; "></div>
+
+	<div id="quickMN" class="c_quickMN" style="right:0px; border-top:none;">
+		<div class="slideBtn"><a href="javascript:quickOnOff();" title="퀵메뉴 닫기"><img src="http://static.nurisoop.co.kr/images/img/btn_quickMN_close.png"></a></div>
+		<ul class="list">
+			<li class="menu"><a href="/mypage/wishlist"><img src="http://static.nurisoop.co.kr/images/img/icon_quickMN_wish.png"> 위시리스트</a></li>
+			<li class="line"></li>
+			<li class="menu"><a href="/mypage/cartList"><img src="http://static.nurisoop.co.kr/images/img/icon_quickMN_cart.png"> 장바구니</a></li>
+			<li class="line"></li>
+			<li class="menu"><a href="https://www.doortodoor.co.kr/parcel/pa_004.jsp" target="_blank"><img src="http://static.nurisoop.co.kr/images/img/icon_quickMN_search.png"> 배송조회</a></li>
+			<li class="line"></li>
+			<li class="menu"><a href="javascript:winOpen('/siteProc/findBank', 'findbank', '404', '500');"><img src="http://static.nurisoop.co.kr/images/img/icon_quickMN_bank.png"> 미확인입금</a></li>
+			<li class="line"></li>
+			<li class="menu"><img src="http://static.nurisoop.co.kr/images/img/icon_quickMN_view.png"> 오늘본상품</li>
+			<li class="line"></li>
+			<li class="photo">
+				<div style="height:60px; width:60px; overflow:hidden; margin:0 auto;">
+				<div id="today_list" style="position:relative;">
+								</div>
+				</div>
+				<div class="numBtn">
+					<a href="javascript:quickbn_goods('prev');" title="이전"><img src="http://static.nurisoop.co.kr/images/img/btn_prev2.jpg"></a>
+					<span class="q_view_page">1</span>/<span class="q_page">1</span>
+					<a href="javascript:quickbn_goods('next');" title="다음"><img src="http://static.nurisoop.co.kr/images/img/btn_next2.jpg"></a>
+				</div>
+			</li>
+		</ul>
+		<div class="topBtn"><a href="#" title="위로"><img src="http://static.nurisoop.co.kr/images/img/btn_quickMN_top.jpg"></a></div>
+	</div>
+	<!---우측 퀵메뉴 END--->
+
+
+		
+	<!-- 좌측 사이드 배너 -->
+	<div id="scrollBN">
+		<div id="scrollBN2">
+			<p style='margin-bottom:10px;'><a href='/event/view201603'><img src='http://static.nurisoop.co.kr/images/event/20160203/guerrilla_left_bn.png' alt='1+1 게릴라 이벤트'></a></p>		</div>
+	</div>
+
+
+
+
+<script type="text/javascript">
+function chkPaperCoupon() {
+	var paper01 = $("input[name='paper01']").val().trim();
+	if(!paper01 || paper01 == "" || paper01.length < 4) {
+		alert('쿠폰번호를 입력해 주세요.');
+		$("input[name='paper01']").val("");
+		$("input[name='paper01']").focus();
+		return false;
+	}
+	var paper02 = $("input[name='paper02']").val().trim();
+	if(!paper02 || paper02 == "" || paper02.length < 4) {
+		alert('쿠폰번호를 입력해 주세요.');
+		$("input[name='paper02']").val("");
+		$("input[name='paper02']").focus();
+		return false;
+	}
+	var paper03 = $("input[name='paper03']").val().trim();
+	if(!paper03 || paper03 == "" || paper03.length < 4) {
+		alert('쿠폰번호를 입력해 주세요.');
+		$("input[name='paper03']").val("");
+		$("input[name='paper03']").focus();
+		return false;
+	}
+	var paper04 = $("input[name='paper04']").val().trim();
+	if(!paper04 || paper04 == "" || paper04.length < 4) {
+		alert('쿠폰번호를 입력해 주세요.');
+		$("input[name='paper04']").val("");
+		$("input[name='paper04']").focus();
+		return false;
+	}
+}
+</script>
+		<!--서브-->
+		<div id="sub_wrap">
+			<p class="navigation"><span class="home">HOME</span> > 마이페이지 > <span class="on">할인쿠폰내역</span></p>
+						<div class="left">
+				<img src="http://static.nurisoop.co.kr/images/img/sub_mn_mypage.png" alt="Mypage">
+				<ul>
+				<li class="tit2"><a href="/mypage/orderList">주문내역/배송조회</a></li><li class="tit2"><a href="/mypage/wishlist">위시리스트</a></li><li class="tit2"><a href="/mypage/cartList">장바구니</a></li><li class="tit2"><a href="/mypage/point">적립금내역</a></li><li class="tit_on2"><a href="/mypage/coupon">할인쿠폰내역</a></li><li class="tit2"><a href="/mypage/userAuth">본인인증하기</a></li><li class="tit2"><a href="/mypage/oneid">아이디 통합하기</a></li><li class="tit2"><a href="/mypage/myinfo">내정보수정</a></li><li class="tit2"><a href="/mypage/hack">회원탈퇴</a></li>				</ul>
+
+								<img src="http://static.nurisoop.co.kr/images/img/sub_mn_bottom.png">
+				<img src="http://static.nurisoop.co.kr/images/img/left_tel.jpg" alt="상담전화" style="margin-top:15px">
+				<ul id="left_quick">
+				<li><span class="qna"><a href="/community/qna" alt="상품Q&A"></a></span></li>
+				<li><span class="point"><a href="/mypage/point" alt="적립금내역"></a></span></li>
+				<li><span class="membership"><a href="/event/view/5/" alt="회원혜택"></a></span></li>
+				<li><span class="coupon"><a href="/mypage/coupon" alt="나의쿠폰함"></a></span></li>
+				<li><span class="sample"><a href="/customer/sample" alt="무료샘플신청"></a></span></li>
+				<li><span class="delivery"><a href="/mypage/orderList" alt="주문배송조회"></a></span></li>
+				</ul>			</div>
+
+			<!--할인쿠폰내역-->
+			<img src="http://static.nurisoop.co.kr/images/img/sub_tit_coupon.png" alt="할인쿠폰내역" class="p_l_20">
+			<div id="subcts_wrap">
+				<div class="notice_txt">
+					<span class="orange">
+					- 해당 상품쿠폰의 사용기준과 기간을 반드시 확인하여 주세요.<br/>
+					- 유효기간이 만기된 상품쿠폰은 자동 소멸됩니다.<br/>
+					- 쿠폰은 10,000원 이상 구매시 사용 가능합니다.
+					</span>
+				</div>
+				<!--
+				<div class="coupon_plus2">
+					<form name="paperCouponForm" method="post" action="/mypage/couponPaperPro" onSubmit="return chkPaperCoupon(this);">
+					<input name="paper01" class="input" style="width:70px" type="text" maxlength="4" value="" onKeyUp="nextMove(this, '4', 'paper02');"> -
+					<input name="paper02" class="input" style="width:70px" type="text" maxlength="4" value="" onKeyUp="nextMove(this, '4', 'paper03');"> -
+					<input name="paper03" class="input" style="width:70px" type="text" maxlength="4" value="" onKeyUp="nextMove(this, '4', 'paper04');"> -
+					<input name="paper04" class="input" style="width:70px" type="text" maxlength="4" value="">
+					<input type="image" src="http://static.nurisoop.co.kr/images/img/btn_ok5.jpg" alt="확인" />
+					</form>
+				</div>
+				-->
+				<div class="certificationBox">
+					<img src="http://static.nurisoop.co.kr/images/img/coupon_guide_Top.jpg"/>
+					<p class="txt">친구에게 누리숲을 추천하세요!! <br/> 보내준 할인쿠폰으로 친구가 첫 구매를 하면 회원님께 결제금액의 10%를 적립해드립니다. <a class="friendBtn" href="#"><img src="http://static.nurisoop.co.kr/images/img/friend_btn02.png" alt="친구추천하기버튼"></a></p>
+
+					<div class="coupon_guide_btn"><a href="/user2/auth"></a></div>
+				</div>
+				<!--
+				<h4><img src="http://static.nurisoop.co.kr/images/img/coupon_tab01.jpg" alt="할인쿠폰전체내역" usemap="#coupon_Map" /></h4>
+				-->
+				<h4>
+					<img src="http://static.nurisoop.co.kr/images/img/coupon_new_tab01.jpg" usemap="#coupon_Map"/>
+				</h4>
+											<table class="coupon_t">
+							<colgroup>
+								<col width="470">
+								<col width="130">
+								<col width="130">
+								<col width="100">
+							</colgroup>
+							<tr>
+								<th class="b_r">쿠폰명</th>
+								<th class="b_r">유효기간</th>
+								<th class="b_r">할인/적립</th>
+								<th>사용여부</th>
+							</tr>
+													</table>
+					
+					<div class="paging">
+											</div>
+<map name="coupon_Map" id="coupon_Map">
+  <area shape="rect" coords="-10,1,140,36" href="/mypage/coupon" alt="할인쿠폰 전체보기" />
+  <area shape="rect" coords="144,0,284,34" href="/mypage/coupon/?type=yet" alt="할인쿠폰 보유내역" />
+  <area shape="rect" coords="286,2,421,42" href="/mypage/coupon/?type=used" alt="할인쿠폰 사용내역" />
+  <area shape="rect" coords="426,6,566,31" href="/mypage/coupon/?type=offline" alt="오프라인쿠폰등록" />
+</map>
+			</div>
+		</div>	
+	<!-- 크리테오 OneTag -->
+	<script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+	<script type="text/javascript">
+	window.criteo_q = window.criteo_q || [];
+	window.criteo_q.push(
+	{ event: "setAccount", account: 36062 },
+	{ event: "setEmail", email: "" },
+	{ event: "setSiteType", type: "d" },
+	{ event: "viewHome" }
+	);
+	</script>
+	<!-- 크리테오 OneTag -->
+
+
+<!-- VIZURY(비져리) 리타겟팅 스크립트-->
+<script type="text/javascript">
+(function() {
+    try {
+        var viz = document.createElement("script");
+        viz.type = "text/javascript";
+        viz.async = true;
+        viz.src = ("https:" == document.location.protocol ?"https://kr-tags.vizury.com" : "http://kr-tags.vizury.com")+ "/analyze/pixel.php?account_id=VIZVRM3290";
+
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(viz, s);
+        viz.onload = function() {
+            try {
+                pixel.parse();
+            } catch (i) {
+            }
+        };
+        viz.onreadystatechange = function() {
+            if (viz.readyState == "complete" || viz.readyState == "loaded") {
+                try {
+                    pixel.parse();
+                } catch (i) {
+                }
+            }
+        };
+    } catch (i) {
+    }
+})();
+</script>
+
+<!-- Daum 배너 리타겟팅 스크립트-->
+<script type="text/javascript">
+    var roosevelt_params = {
+        retargeting_id:'gPcFD2ACFl5Nbq-TphAGRA00',
+        tag_label:'SJfHDGRLSpCvkj2FMyFqgQ'
+    };
+</script>
+<script type="text/javascript" src="//adimg.daumcdn.net/rt/roosevelt.js" async></script>
+<!-- Daum 배너 리타겟팅 스크립트-->
+
+<!-- 애드베이 스크립트 -->
+<!--iframe src="http://adcheck.about.co.kr/mad/prd/view?shopid=nurisoop" scrolling="no" frameborder="0" width="0" height="0"></iframe-->
+<!-- 애드베이 스크립트 -->
+
+<!-- Google 로그수집 -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-51789127-2', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- Google 로그수집 -->
+
+<!-- Google 리마케팅 태그 코드 -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 960746251;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/960746251/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- Google 리마케팅 태그 코드 -->
+
+<script type="text/javascript">
+var fsite = {
+	go_family: function(url){
+		window.open(url);
+		fsite.click_family();
+	}, 
+	click_family: function(){
+		var hh = $("#family_list").attr("class");
+		if(hh == "f_on"){
+			$("#family_list").css({"display":"none"});
+			$("#family_list").removeClass("f_on");
+		}else{
+			$("#family_list").css({"display":"block"});
+			$("#family_list").addClass("f_on");
+		}
+	}
+}
+</script>
+
+
+<!-- WIDERPLANET  SCRIPT START 2016.12.13 -->
+<div id="wp_tg_cts" style="display:none;"></div>
+<script type="text/javascript">
+var wptg_tagscript_vars = wptg_tagscript_vars || [];
+wptg_tagscript_vars.push(
+(function() {
+	return {
+		wp_hcuid:"",   /*Cross device targeting을 원하는 광고주는 로그인한 사용자의 Unique ID (ex. 로그인 ID, 고객넘버 등)를 암호화하여 대입.
+								  *주의: 로그인 하지 않은 사용자는 어떠한 값도 대입하지 않습니다.*/
+		ti:"32721",	/*광고주 코드*/
+		ty:"Home",	/*트래킹태그 타입*/
+		device:"web"	/*디바이스 종류 (web 또는 mobile)*/
+		
+	};
+}));
+</script>
+<script type="text/javascript" async src="//cdn-aitg.widerplanet.com/js/wp_astg_4.0.js"></script>
+<!-- // WIDERPLANET  SCRIPT END 2016.12.13 -->
+
+
+		<!--하단바로가기-->
+		<div id="footer_mn">
+			<ul class="txt">
+			<li class="p_l_20"><a href="javascript:winOpen('/company/agreement', '', 840, 800);">서비스이용약관</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="javascript:winOpen('/company/policy', '', 840, 800);">개인정보처리방침</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="/company/brand">회사소개</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="/customer/howto">이용안내</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="javascript:winOpen('/company/contact', '', 737, 640);">제휴안내</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="/customer/qna">1:1문의하기</a></li>
+			</ul>
+			<div class="family">
+				<div class="fam_btn_m"><a href="javascript:fsite.click_family();">Family Site&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲</a></div>
+				<div id="family_list">
+					<iframe src="http://www.nurisoop.co.kr/site/familySite.php" style="width:100%;" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<!--하단정보-->
+		<div id="footer">
+			<div class="logo"><img src="http://static.nurisoop.co.kr/images/img/footer_logo.jpg"></div>
+			<div class="txt">
+(주)이비즈네트웍스 / 대표이사 : 박기범 / 135-917 서울특별시 강남구 선릉로 99길 12 모노타워  <br/>
+고객센터 1688-6093 / FAX : 070-8277-5511 / EMAIL 주소 : nurisoop@ebiznetworks.co.kr / 개인정보관리자 : 박준수<br/>
+사업자등록번호 : 220-87-30865[<a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank">사업자번호조회</a>] / 통신판매업 신고번호 : 강남-11501호<br />의료기기판매업 영업신고번호 : 제 4730호 <br/>
+CopyrightⓒEbizNetworks. All Rights Reserved.
+			<img src="http://static.nurisoop.co.kr/images/img/footer_mark.png" alt="" style="margin-top:10px;" usemap="#Map_footer"/>
+			<script>
+			function pop_taxpayer() {
+				var win_tax	= window.open('/mypage/taxpayer','taxpayer','scrollbars=no,resizable=no,width=510,height=720');
+			}
+			</script>
+            <map name="Map_footer">
+    			<area shape="rect" coords="349,8,483,38" href="javascript:pop_taxpayer();">
+    		</map>
+			</div>
+			<div class="link">
+				<img src="http://static.nurisoop.co.kr/images/img/qrcode.jpg" alt="QR코드">
+				<div style="margin-top:10px">
+					<!-- KB에스크로 이체 인증마크 적용 시작 -->
+					 <a href="javascript:onPopKBAuthMark('http://www.nurisoop.co.kr');">
+					 <img src="http://static.nurisoop.co.kr/images/img/escrowcmark.png" border="0">
+					 </a>
+					 <!--KB에스크로이체 인증마크 적용 종료 -->
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--wrapper end-->
+
+	
+	<!-- 레이어팝업 배경 -->
+	<div id="layerBack">&nbsp;</div>
+
+
+
+<!-- 네이버 유입경로스크립트 -->
+<script type="text/javascript">
+wcs_do();
+</script>
+<!-- 네이버 유입경로스크립트 -->
+
+
+	<style>
+	.list_wrap { position:fixed; bottom:5px; right:60px; z-index:999; }
+	.list_box {position:relative;float:left;}
+	.link_list { background-color:#ffffff; width:200px; height:470px; bottom:25px; border:1px solid #dddddd; position:absolute; overflow-y:scroll; display:none }
+	.link_list li { padding:2px; padding-left:10px; border:none; font-size:9pt;text-align:left; }
+	.link_button { background-color:#ffffff; border:1px solid #dddddd; position:relative; width:200px; bottom:0px; cursor:pointer; font-size:9pt; padding-top:4px; text-align:center; height:20px; overflow-x:hidden; white-space:nowrap; }
+	.red {color:#ff0000;}
+	</style>
+	<script>
+	function on_off_list(val) {
+		var state = $("#"+val).css("display");
+		
+		$(".link_list").hide();	
+
+		if(state == "none") {
+			$("."+val).show();
+		} else {
+			$("."+val).hide();
+		}
+	}
+	function off_list() {
+		$(".link_list").hide();	
+	}
+	</script>
+	<div class="list_wrap">
+		<div style="float:left;margin-right:10px">※ 사내노출 </div>
+		
+		<div class="list_box">
+		<div class="link_button" onclick="javascript:on_off_list('link_list');">===== 사이트선택 =====</div>
+			<div id="link_list" class="link_list">
+			<ul><li  style='font-weight:bold; background-color:#eeeeee;'><a href='http://www.nurisoop.co.kr' target="_blank">&gt;&gt; 누리숲</a></li><li ><a href='http://www.nurigirl.co.kr' target="_blank">누리걸</a></li><li ><a href='http://www.beautysoop.co.kr' target="_blank">뷰티숲</a></li><li ><a href='http://www.soopmarket.co.kr' target="_blank">숲마켓</a></li><li ><a href='http://www.prettysoopia.co.kr' target="_blank">프리티수피아</a></li><li ><a href='http://www.nurisoopmall.co.kr' target="_blank">누리숲몰</a></li><li ><a href='http://www.nurisoopnara.co.kr' target="_blank">누리숲나라</a></li><li ><a href='http://www.nurisoopcos.co.kr' target="_blank">누리숲코스</a></li><li ><a href='http://www.oknurisoop.co.kr' target="_blank">오케이누리숲</a></li><li ><a href='http://www.nurisooplove.co.kr' target="_blank">누리숲러브</a></li><li ><a href='http://www.onnurisoop.co.kr' target="_blank">온누리숲</a></li><li ><a href='http://www.nurisoopholic.co.kr' target="_blank">누리숲홀릭</a></li><li ><a href='http://www.nurisoopin.co.kr' target="_blank">누리숲인</a></li><li ><a href='http://www.nurisoopday.co.kr' target="_blank">누리숲데이</a></li><li ><a href='http://www.nurisoopgo.co.kr' target="_blank">누리숲고</a></li><li ><a href='http://www.nurisoopia.co.kr' target="_blank">누리숲피아</a></li><li ><a href='http://www.nurisoophouse.co.kr' target="_blank">누리숲하우스</a></li><li ><a href='http://www.soopmoa.co.kr' target="_blank">숲모아</a></li><li ><a href='http://www.nurionly.co.kr' target="_blank">누리온리</a></li><li ><a href='http://www.joeuncos.co.kr' target="_blank">조은화장품</a></li><li ><a href='http://www.wannanuri.co.kr' target="_blank">워너누리</a></li></ul></div></div>		
+	</div>
+
+	
+ </body>
+</html>
