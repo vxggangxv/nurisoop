@@ -1197,9 +1197,9 @@ input:focus {
 .fr_event_pop .close .close7 {width: 100%; text-align: center;}
 .fr_event_pop .close .check1{-webkit-border-radius:1px; -webkit-appearance:none; position: absolute; border: none; width: 0; height: 0; padding: 0;}
 .fr_event_pop .close .clsBtn, .fr_event_pop .close .txt {display: inline-block; font-weight: 500; font-size:34px; cursor: pointer; float: left; text-align: center; line-height: 2em; background: #EBEBEB; border-radius: 3px; margin-left: 1.5%; height: 69px; color:#4F4F4F; 
-font-family: "nanungothic", "Malgun Gothic", dotum, sans-serif;}
-.fr_event_pop .close .txt {position: relative; width: 59%; text-decoration: none;}
-.fr_event_pop .close .clsBtn {width: 36.5%;}
+font-family: "nanungothic", "Malgun Gothic", dotum, sans-serif; letter-spacing: -1px;  text-decoration: none;}
+.fr_event_pop .close .txt {position: relative; width: 62%;}
+.fr_event_pop .close .clsBtn {width: 33.5%;}
 .clr:after {content: ""; display: block; clear: both;}
 
 /* 마이페이지 > 적립금 2016-11-28 */
