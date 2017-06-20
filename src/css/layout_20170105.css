@@ -51,7 +51,7 @@ a:hover, a:active {text-decoration:none; color:#333333}
 #header #sub_menu dl dd .nurisoop{margin-left:27px;padding-top:10px;}
 #header #sub_menu dl dd .goods_01{margin-left:30px;padding-top:10px;}
 #header #sub_menu dl dd .goods_02{margin-left:210px;padding-top:10px;}
-#header #sub_menu dl dd .goods_03{width:1115px;padding-top:3px;}
+#header #sub_menu dl dd .goods_03{width:1115px;padding-top:0px;}
 #header #sub_menu dl dd .goods_03 li{width:105px;margin-right:0;text-align:center; } 
 #header #sub_menu dl dd .goods_03 .long{width:110px;margin-right:0;text-align:center}
 #header #sub_menu dl dd .goods_03 .short {width:70px;margin-right:0;text-align:center} 
@@ -443,7 +443,7 @@ width: 150px;
 #subcts_wrap .order_detail_t th {padding-left:20px; height:35px; background:#f5f5f5; border-bottom:1px solid #eeeeee; font-weight:bold}
 #subcts_wrap .order_detail_t td {padding-left:20px; height:35px; border-bottom:1px solid #eeeeee}
 
-#subcts_wrap .point {margin-top:25px; padding:50px 0; width:830px; height:48px; background:url(http://static.nurisoop.co.kr/images/img/point_img01.jpg) no-repeat; text-align:center;}
+#subcts_wrap .point {margin-top:5px; width:730px; height:50px; background:url(http://static.nurisoop.co.kr/images/img/point_img02.jpg) no-repeat; text-align:center;line-height:50px;margin:0 auto;}
 #subcts_wrap .point .number {font-size:25px; font-weight:bold; color:#fe462e; font-family:Tahoma}
 #subcts_wrap .point_t {width:830px; letter-spacing:0; border-top:2px solid #76a33d}
 #subcts_wrap .point_t th {height:50px; background:#f5f5f5; border-top:1px solid #d7d6d6; border-bottom:1px solid #eeeeee; font-weight:bold; text-align:center}
@@ -612,7 +612,7 @@ width: 150px;
 
 /*팝업-배송지연*/
 #delay_popup {position:absolute; z-index:999; display:none; left:30px; top:30px; width:405px; height:496px}
-#footer_delay {clear: both; width:404px; height:30px; background-color:#565656; color:#ffffff; font-size:12px;}
+#footer_delay {clear: both; width:350px; height:30px; background-color:#565656; color:#ffffff; font-size:12px;}
 #footer_delay a{color:#ffffff}
 #footer_delay .one_day {float: left; margin:3px 0 0 5px;}
 #footer_delay .close {float: right; margin:5px 10px 0 0;}
@@ -1358,3 +1358,53 @@ p.search_word span.search_word_R {display:block;float:left;width:470px;font-size
 /*인기순 추가 수정20161230*/
 .goods_list ul li p.txt_02{font-size:12px;color:#9c653d;font-family: '돋움', Dotum, sans-serif}
 .goods_list ul li p.txt_03{font-size:11px;color:#a6a6a6;font-family: '돋움', Dotum, sans-serif}
+
+
+/*20170124 리스트페이지 수정*/
+.priceBox{width:165px;height:20px;margin:0 auto;padding-top:0px;}
+#sub_wrap #list_wrap .goods_list .priceBox > .price01{float:left;width:76px;font-size:11px;margin-top:0 important;padding-top:3px;text-align:right;}
+#sub_wrap #list_wrap .goods_list .discount{float:right;width:76px;color:#ef1d36;text-align:left;}
+#sub_wrap #list_wrap .goods_list .ingredient{font-family: '돋움', Dotum, sans-serif; font-size:11px;color:#6f6f6f;line-height:15px;}
+#sub_wrap #list_wrap .goods_list .good_icon {margin-bottom:4px;}
+
+
+/*20170217_친구추천 김지영대리버전*/
+
+.fr_event17{position:relative;width:920px;height:965px;background:url(http://static.nurisoop.co.kr/images/event/20170221/20170221_friendevent_new_web.jpg) no-repeat;}
+.fr_event17 .fr_codes{position:absolute;width:560px;height:48px;left:50%;bottom:339px;margin-left:-280px;}
+.fr_event17 .fr_codes input{width:560px;height:45px;border:3px solid #000;background:#fff;border-radius:5px;font-size:20px;font-weight:600;text-align:center;}
+.fr_event17 .want_codes{position:absolute;width:566px;height:50px;left:178px;bottom:215px;}
+.fr_event17 .want_codes input.write_codes{float:left;width:409px;height:45px;border:3px solid #000;border-radius:5px;font-size:20px;font-weight:600;text-align:center;}
+.fr_event17 .want_codes input.write_codesBtn{float:right;width:141px;height:46px;border:none;background:none;margin:2px 2px 0px 0px;cursor:pointer;}
+.fr_event17 .sns_btnBox{position:absolute;width:856px;height:45px;left:50%;bottom:115px;margin-left:-428px;}
+.fr_event17 .sns_btnBox > div {float:left;width:148px;height:46px;cursor:pointer;}
+.tw_Btn{margin-left:29px;}
+.em_Btn{margin-left:28px;}
+.mo_Btn{margin-left:23px;}
+.li_Btn{margin-left:26px;}
+
+
+/*랜딩페이지팝업*/
+
+.url_popWrap{position:fixed;top:0;left:0;width:100%;height:100%;background:url('http://static.nurisoop.co.kr/images/event/20161129/fr_eventBg.png') repeat;z-index:100;}
+.url_pop{position:absolute;width:560px;height:355px;background:url(http://static.nurisoop.co.kr/images/event/20170221/url_pop.jpg) no-repeat;top:170px;left:50%;margin-left:-260px;}
+.url_pop > label{display:block;width:467px;height:53px;margin:181px 0px 0px 48px;}
+.url_pop > label input.txt_input{float:left;width:325px;height:40px;border:4px solid #62b944;font-size:20px;font-weight:600;text-align:center;border-radius:none;}
+.url_pop > label input.url_popBtn{float:right;width:127px;height:50px;background:none;cursor:pointer;border:none;}
+p.closed{float:right;width:20px;height:30px;font-size:25px;color:#fff;font-weight:600;cursor:pointer;margin:15px 10px 0px 0px;}
+
+/*코드입력팝업*/
+
+.couponcode_popWrap{position:fixed;top:0;left:0;width:100%;height:100%;background:url('http://static.nurisoop.co.kr/images/event/20161129/fr_eventBg.png') repeat;z-index:100;}
+.couponcode_pop{position:absolute;width:600px;height:400px;background:url(http://static.nurisoop.co.kr/images/img/20170303_s_couponImg.jpg) no-repeat;top:170px;left:50%;margin-left:-300px;}
+.couponcode_pop .code_txt{display:inline-block;width:504px;height:41px;margin-top:249px;}
+.couponcode_pop .code_txt input{width:500px;height:40px;background:none;border:none;outline:none;text-align:center;font-size:20px;}
+.couponcode_pop .code_Btn{display:inline-block;width:445px;height:49px;margin:50px 0px 0px 81px;}
+.couponcode_pop .code_Btn input {width:206px;height:49px;background:none;border:none;outline:none;cursor:pointer;}
+.couponcode_pop .code_Btn input.code_Btn01{float:left;}
+.couponcode_pop .code_Btn input.code_Btn01{float:right;}
+
+/*발급완료팝업*/
+.coupon_pop{position:absolute;width:570px;height:362px;background:url(http://static.nurisoop.co.kr/images/img/20170303_s_coupon.jpg) no-repeat;top:170px;left:50%;margin-left:-285px;}
+.codeBtn{display:inline-block;width:159px;height:45px;margin:248px 0px 0px 219px;}
+.codeBtn input {width:159px;height:45px;cursor:pointer;background:none;border:none;outline:none;}
