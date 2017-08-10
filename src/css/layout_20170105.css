@@ -980,10 +980,10 @@ h4{margin:40px 0 10px 0}
 #guerrilla .eventGoods ul {float:left; border-left:1px solid #696969; border-bottom:1px solid #696969}
 #guerrilla .eventGoods li {float:left; width:172px; height:302px; background:#fff; border-right:1px solid #696969; font-size:20px; font-weight:600; letter-spacing:-1px; color:#bcbabb; text-align:center}
 #guerrilla .eventGoods .top {margin-bottom:20px; width:172px; height:30px; line-height:30px; background:#373739; color:#fff; font-size:16px}
-#guerrilla .eventGoods .on {position:relative; width:172px; height:302px; color:#f83d50} 
+#guerrilla .eventGoods .on {position:relative; color:#f83d50;}
 #guerrilla .eventGoods .on .top2 {margin-bottom:10px; width:172px; height:30px; line-height:30px; background:#f83d50; color:#fff; font-size:16px}
 #guerrilla .eventGoods .on .one {font-family:verdana, '맑은 고딕', 'Malgun Gothic'; font-size:24px; font-weight:bold; letter-spacing:-3px; line-height:20px}
-#guerrilla .eventGoods .on .name {font-size:17px}
+#guerrilla .eventGoods .on .name {font-size:16px; line-height: 1.5;}
 #guerrilla .eventGoods .on .blind {position:absolute; width:172px; height:302px; background:#000; opacity:0.7; filter:alpha(opacity=88); top:0; left:0; z-index:1px}
 #guerrilla .eventGoods .on .blind_txt {position:absolute; top:130px; width:172px; color:#fff; text-align:center; font-weight:800; z-index:2px}
 

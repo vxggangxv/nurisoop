@@ -1,0 +1,58 @@
+.error_txt { color:#FF0000;}
+.error_txt p { margin:0; padding:0; }
+.text_overflow { text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
+.srch_bold { color:red; background-color:yellow; }
+.btnArea { text-align:center; margin:10px 0; }
+ 
+/*누리숲News*/
+#mini_notice ul {position:absolute; height:40px; overflow:hidden;}
+#mini_notice .notice{padding:0 10px; width:500px; }
+#mini_notice .notice .list{ margin-top:10px; height:20px }
+
+/*누리숲회원혜택*/
+#benefit .rolling .btn li a.on {color:#fff; background-position:0 -69px}
+
+/*회원가입*/
+.agreementBox { padding:10px; height:100px; overflow-y:scroll; border:1px #C7BAB2 solid; color:#858585; font-size:11px; }
+
+/*메인롤링배너*/
+#main_banner01 .big_bn {width:1100px; height:448px}
+#main_banner01 .big_bn .big_bn2 {position:relative; width:1100px; height:448px; overflow:hidden}
+#main_banner01 .big_bn .big_bn2 ul{position:relative; width:100000px; height:448px; left:0;}
+#main_banner01 .big_bn .big_bn2 li{float:left; list-style:none;}
+#main_banner01 .banner_num{position:absolute; top:10px; right:10px}
+#main_banner01 .banner_num ul{float:left; list-style:none}
+#main_banner01 .banner_num ul li{float:left}
+#main_banner01 .banner_num ul li a{display:block; width:20px; height:20px; background:url('http://static.nurisoop.co.kr/images/img/main_bn_btn_off.png') no-repeat; }
+#main_banner01 .banner_num ul li a.on {background:url('http://static.nurisoop.co.kr/images/img/main_bn_btn_on.png') no-repeat; }
+
+/*출석체크이벤트*/
+#attendance { width:950px; height:1059px; }
+.attendance_back{ background-image:url(http://static.nurisoop.co.kr/images/img/9_head.jpg); }
+.attendance_back2{ background-image:url(http://static.nurisoop.co.kr/images/event/20150901/event_back.jpg); }
+/*#attendance2 { width:950px; height:1059px; background-image:url(http://static.nurisoop.co.kr/images/event/20150901/event_back.jpg); }*/
+#attendance .poBox { position:absolute; }
+#attendance .msgBox { position:relative; left:220px; top:293px; width:340px; padding-top:13px; color:#FFF; text-align:center; }
+#attendance .checkedBtnBox { position:relative; left:590px; top:293px; width:157px; }
+#attendance .stampBox { position:relative; left:720px; top:170px; width:157px; }
+#attendance .calendar_t {width:630px; }
+#attendance .calendar_t td { background-color:#FFF; padding:6px; height:70px; border-right:1px #454F4F solid; border-bottom:1px #454F4F solid; }
+#attendance .calendar_t td div { font-weight:bold; font-family:tahoma; font-size:10px; width:20px; height:20px; text-align:center; line-height:20px; background-color:#EEEEEE; }
+#attendance .stamp { display:block;width:51px; height:51px; }
+#attendance .stamp img { max-width:51px; max-height:51px; }
+.clime { color:#E3F193; }
+.cRed { color:#ea0000; }
+.cGray { color:#666; }
+
+/*레이어팝업 배경*/
+#layerBack { position:absolute; display:none; z-index:999; left:0px; top:0px; width:100%; height:100%; background-color:#000; opacity:0.5; } /* 레이어팝업 뒷배경 */
+
+/*게릴라이벤트 20161102*/
+/* .eventGoods{width:100%;height:auto;}
+.eventGoods ul{clear:both;width:100%;height:100%;padding-top:25px;margin-top:25px;border-bottom:1px solid #bdbdbd;}
+.eventGoods li{width:210px;float:left;padding:10px 15px 20px 0px;border-right:1px solid #bdbdbd;border-bottom:1px solid #bdbdbd;text-align:center;}
+.eventGoods li img{vertical-align:middle;} */
+
+.line-li{border-left:1px solid #bdbdbd;}
+#chk_title { display:none; }
+#chk_title h1 { color:#FFF; }

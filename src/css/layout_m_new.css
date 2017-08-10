@@ -1,6 +1,5 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
-@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
 /* @ nomarlize */
 
 html {font-family:'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif,Helvetica,AppleGothic;/* 1 */-ms-text-size-adjust: 100%; /* 2 */-webkit-text-size-adjust: 100%; /* 2 */}
@@ -9,8 +8,7 @@ select,option {-webkit-border-radius:0;-webkit-appearance:none}
 
 select {padding-left:20px;font-size:25px;font-family:'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif,Helvetica,AppleGothic;height: 55px;border: 2px solid #e4e4e4;border-radius: 10px;overflow: hidden;line-height:24px;color:#4a4a4a;background: url(http://static.nurisoop.co.kr/images/m/arrow.png) no-repeat 95% 50%}
 
-/*input {padding-left:20px;text-align:center;font-size:25px;font-family:'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif,Helvetica,AppleGothic;height: 55px;border: 2px solid #e4e4e4;color:#4a4a4a;text-align:left;border-radius: 10px;appearance:0;  -webkit-appearance: none;
-   -webkit-border-radius: 0;}*/
+input {padding-left:20px;text-align:center;font-size:25px;font-family:'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif,Helvetica,AppleGothic;height: 55px;border: 2px solid #e4e4e4;color:#4a4a4a;text-align:left;border-radius: 10px}
 
 li {list-style:none;}
 
@@ -28,12 +26,7 @@ input[type=radio]:checked{background-position:-40px -40px}
 
 input[type=checkbox]:checked{background-position:0 -40px}
 
-input:focus {
-  outline: none;
-}
-input {outline-style: none;}
 
-a { -webkit-tap-highlight-color:transparent;}
 #wrap {width:720px;margin:0 auto;overflow:hidden;}
 
 #header {position:relative;width:720px;height:93px;background:url(http://static.nurisoop.co.kr/images/m/gmb_bg.png) no-repeat;border-bottom:8px solid #694932}
@@ -118,6 +111,45 @@ a { -webkit-tap-highlight-color:transparent;}
 #gnbWrap2 .gnbUIO > ul > li.on a	{color:#76a33d;border-bottom:3px solid #76a33d}
 
 #gnbWrap2 .gnbUIO > ul > li > a span {display:inline-block;margin-top:20px;letter-spacing:-2px}
+
+
+#gnbWrap3 {width:100%; height:65px; border-bottom:2px solid #cccccc; background:#f4fbef}
+
+#gnbWrap3 .gnbUIO2 {padding-left: 17%; height:100%; text-align:center;}
+
+#gnbWrap3 .gnbUIO2 > ul > li {float:left; text-align:center;height:65px; line-height:38px; font-weight:500; padding:0px 20px 0px 20px;}
+
+#gnbWrap3 .gnbUIO2 > ul > li a {position:relative; display:block;width:100%; color:#4a4a4a;font-size:23px; text-decoration:none; }
+
+#gnbWrap3 .gnbUIO2 > ul > li.on a	{color:#76a33d; font-weight: bold; }
+
+#gnbWrap3 .gnbUIO2 > ul > li > a span {display:inline-block; margin-top:15px;letter-spacing:-2px; }
+
+#gnbWrap3 .gnbUIO2 .type4 { background:url(http://static.nurisoop.co.kr/images/img/bg_line.jpg) no-repeat right center;}
+
+
+#gnbWrap4 {width:100%; height:65px; border-bottom:2px solid #cccccc; background:#f4fbef}
+
+#gnbWrap4 .gnbUIO3 {padding-left: 1%; height:100%; text-align:center;}
+
+#gnbWrap4 .gnbUIO3 > ul > li {float:left; text-align:center;height:65px; line-height:38px; font-weight:500; padding:0px 10px 0px 10px;}
+
+#gnbWrap4 .gnbUIO3 > ul > li a {position:relative; display:block;width:100%; color:#4a4a4a;font-size:23px; text-decoration:none; }
+
+#gnbWrap4 .gnbUIO3 > ul > li.on a	{color:#76a33d; font-weight: bold; }
+
+#gnbWrap4 .gnbUIO3 > ul > li > a span {display:inline-block; margin-top:15px;letter-spacing:-2px; }
+
+#gnbWrap4 .gnbUIO3 .type5 { background:url(http://static.nurisoop.co.kr/images/img/bg_line.jpg) no-repeat right center;}
+
+
+#gnbWrap5 {width:100%; height:65px; border-bottom:2px solid #cccccc; background:#f4fbef; position:relative; position:relative; display:block; clear:both; letter-spacing: -1px}
+#gnbWrap5 .gnbws{text-align:center; padding-top:17px}
+#gnbWrap5 span a{color:#4a4a4a;font-size:23px; text-decoration:none; }
+#gnbWrap5 span.on a{color:#76a33d; font-weight: bold; }
+#gnbWrap5 .lines{margin:0 20px; color:#c4c4c4; font-size:20px;}
+#gnbWrap5 .lines02 {margin:0 6px; color:#c4c4c4; font-size:20px;}
+
 
 #gnbWrap2 .guns	{width:25.13888888889%;}
 
@@ -209,13 +241,10 @@ a { -webkit-tap-highlight-color:transparent;}
 #icon li {float:left;width:174px;height:174px;text-align:center}
 
 
-/*** 네비게이션 2016-11-28*/
+/*** 네비게이션 */
 
 #navi {padding-right:20px;width:700px;height:50px;background:#f7f7f7;border-bottom:2px solid #ebebeb;color:#838383;font-size:22px;text-align:right;line-height:2.6}
 #navi a {color:#838383;text-decoration:none}
-#navi2 {padding-right:20px; width: 100%; height:80px;background:#f7f7f7;border-bottom:2px solid #ebebeb;color:#838383;font-size:30px;text-align:right;line-height:2.6; font-weight: 600; text-align: center}
-#navi2 .back {float: left; padding: 10px;margin-top:10px;}
-#navi2 .back img {width: 50px;}
 
 #navi span {color:#626262;font-weight:600}
 
@@ -261,9 +290,9 @@ a { -webkit-tap-highlight-color:transparent;}
 /*** 메뉴 */
 
 #menuWrap { position:absolute; z-index:99999; width:0;}
-  
+
 #menu {position:relative;width:720px;left:-720px; display:none;}
-  
+
 #menu .link {float:left;width:615px;border:20px solid #76a33d; background-color:#FFF}
 
 #menu .link h3 {padding-left:20px;font-size:30px;font-weight:600;color:#694932;line-height:3}
@@ -287,7 +316,7 @@ a { -webkit-tap-highlight-color:transparent;}
 
 /*** 디테일 */
 
-#detail_thum {padding-top:20px;width:720px;height:620px;text-align:center; }
+#detail_thum {padding-top:20px;width:720px;height:620px;text-align:center}
 
 #detail_thum h3 {font-size:30px;color:#694932;font-weight:600;line-height:1.3}
 
@@ -330,14 +359,14 @@ a { -webkit-tap-highlight-color:transparent;}
 
 #detail_bd {float:left;width:680px;font-size:25px;color:#4a4a4a;text-align:left}
 
-#detail_bd .txt {position:relative;padding-left:20px;padding-top:10px;width:700px;height:50px;text-align:left;line-height:3}
+#detail_bd .txt {position:relative;padding-left:20px;padding-top:20px;width:700px;height:90px;text-align:left;line-height:3}
 
 #detail_bd .txt .write {position:absolute;top:20px;right:30px;display:block;border-radius:10px;width:170px;height:55px;background:#5e9500;color:#fff;text-align:center;line-height:2.2}
 #detail_bd .txt .write a {color:#fff;text-decoration:none}
 
-#detail_bd .txt2 {float:left;position:relative;width:720px;height:70px}
+#detail_bd .txt2 {float:left;position:relative;width:720px;height:100px}
 
-#detail_bd .txt2 .me {position:absolute;top:-30px;right:200px;display:block;border:1px solid #d9d9d9;border-radius:10px;background:#f1f0f0;color:#858585;width:170px;height:55px;text-align:center;line-height:2.2}
+#detail_bd .txt2 .me {position:absolute;top:0px;right:200px;display:block;border:1px solid #d9d9d9;border-radius:10px;background:#f1f0f0;color:#858585;width:170px;height:55px;text-align:center;line-height:2.2}
 #detail_bd .txt2 .me a {color:#858585;text-decoration:none}
 
 #detail_bd .txt2 .write {position:absolute;top:0px;right:20px;display:block;border-radius:10px;width:170px;height:55px;background:#5e9500;color:#fff;text-align:center;line-height:2.2}
@@ -433,29 +462,6 @@ a { -webkit-tap-highlight-color:transparent;}
 .join_sns_t .notice {float:left;display:block;margin-bottom:15px;font-size:20px;color:#f06041}
 
 .join_sns_t .h60 {height:60px}
-
-.fr_eventCode{width:680px;height:280px;margin:0 auto;margin-top:15px;}
-
-.fr_eventCode p.eventCodetxt{width:640px;font-size:28px;color:#12a15b;text-align:center;font-weight:700;margin-bottom:15px;}
-
-.fr_code {width:500px;display:block;margin:0 auto;bordeR:3px solid #12a15b;}
-
-.fr_btnBpx {width:448px;height:60px;margin:0 auto;padding:10px 0px;margin-top:5px;}
-
-.fr_btnBpx input{width:220px;text-align:center;color:#fff;border:none;appearance:0;  -webkit-appearance: none;
-   -webkit-border-radius: 0;
-} 
-
-.fr_btnBpx input.fr_pass_btn {background:#858585;appearance:0;  -webkit-appearance: none;
-   -webkit-border-radius: 0;
-}
-
-.fr_btnBpx input.ft_ok_btn {background:#139551;appearance:0;  -webkit-appearance: none;
-   -webkit-border-radius: 0;
-}
-
-.fr_eventCode2{width:640px;height:100px;margin:0 auto;padding-top:20px;}
-
 
 
 
@@ -568,7 +574,7 @@ a { -webkit-tap-highlight-color:transparent;}
 
 /*** 마이페이지 */
 
-#mypage {float:left;margin-bottom:20px;width:720px}
+#mypage {float:left;margin-bottom:50px;width:720px}
 
 #mypage p {padding-left:20px;font-size:25px;color:#4a4a4a;line-height:1.5}
 
@@ -592,7 +598,8 @@ a { -webkit-tap-highlight-color:transparent;}
 
 #mypage .my_t2 a {color:#4a4a4a;text-decoration:none}
 
-#mypage .point {float:left;margin-bottom:20px;padding-top:35px;width:720px;height:110px;background:url(http://static.nurisoop.co.kr/images/m/20170308_point_bg_m.png) no-repeat;font-size:28px;color:#4a4a4a;text-align:center;line-height:1.5}
+#mypage .point {float:left;margin-bottom:20px;padding-top:35px;width:720px;height:110px;background:url(http://static.nurisoop.co.kr/images/m/20170308_point_bg_m.png) no-repeat;
+font-size:28px;color:#4a4a4a;text-align:center;line-height:1.5}
 
 #mypage .point_t {float:left;margin-bottom:40px;width:720px;font-size:22px}
 
@@ -602,7 +609,7 @@ a { -webkit-tap-highlight-color:transparent;}
 
 #mypage .point_t .h80 {height:80px}
 
-#mypage .category2 {float:left;margin:40px 0 40px 20px;width:6805px;height:55px;border: 2px solid #e4e4e4;border-radius: 10px;font-size:25px;line-height:2.2;color:#838383}
+#mypage .category2 {float:left;margin:40px 0 40px 20px;width:680px;height:55px;border: 2px solid #e4e4e4;border-radius: 10px;font-size:25px;line-height:2.2;color:#838383}
 
 #mypage .category2 li {float:left;display:inline-block;width:220px;height:55px;text-align:center}
 
@@ -610,7 +617,7 @@ a { -webkit-tap-highlight-color:transparent;}
 
 #mypage .notice {float:left;margin:30px 0;width:720px}
 
-#mypage .notice p {margin-bottom:15px;font-size:21px;line-height:1.2;color:#f06041} 
+#mypage .notice p {margin-bottom:15px;font-size:21px;line-height:1.2;color:#f06041}
 
 #mypage .category2 li.line {width:2px;height:55px;background:#e4e4e4}
 
@@ -621,15 +628,11 @@ a { -webkit-tap-highlight-color:transparent;}
 
 #mypage .wish_t .name {line-height:1.4;color:#4a4a4a;font-weight:600;font-size:25px}
 
-#mypage .coupon_plus{float:left;width:660px;padding:20px;font-size:25px;line-height:2.2;color:#838383;border:10px solid #f9f6f4;}
-
-#mypage .certification{width:650px;padding:20px;margin:0 auto;margin-top:20px;background:#fcfaf8;font-size:20px;font-weight:500;line-height:38px;border:3px solid #e0d6c9;color:#785f4c;border-radius:5px;}
-
-#mypage .certification span.point_txt{display:inline-block;font-size:28px;font-weight:800;margin-bottom:8px;color:#baad9d;}
-
-#mypage .certification a.click_btn {width:60px;display:inline-block;background:#5e9500;text-align:center;color:#fff;font-size:18px;text-decoration:none;border-radius:5px;font-weight:700;}
+#mypage .coupon_plus{float:left;width:660px;padding:20px;font-size:25px;line-height:2.2;color:#838383;border:10px solid #f9f6f4}
 
 /*** 이벤트 */
+.side-bn{position: fixed; z-index:1; bottom: 250px; right: 5px; width: 180px;}
+
 .event_t {float:left;margin-left:20px;margin-top:40px;width:680px;border-bottom:2px solid #ebebeb;color:#4a4a4a}
 
 .event_t td {height:40px}
@@ -654,7 +657,7 @@ a { -webkit-tap-highlight-color:transparent;}
 
 
 /*** 출석체크 */
-.cc {width:720px;height:950px;background:#e3f193}  
+.cc {width:720px;height:950px;background:#e3f193}
 
 .cc .name {float:left;padding-left:30px;padding-top:25px;padding-right:10px;width:433px;height:93px;font-size:25px;color:#4a4a4a;letter-spacing:-0.5px}
 
@@ -662,7 +665,7 @@ a { -webkit-tap-highlight-color:transparent;}
 
 .cc .btn {float:left;text-align:left;width:247px;height:118px}
 
-.cc .calendar {float:left;margin-left:20px;width:680px;height:775px;background:url(http://static.nurisoop.co.kr/images/m/calendar_bg.png) no-repeat;}  
+.cc .calendar {float:left;margin-left:20px;width:680px;height:775px;background:url(http://static.nurisoop.co.kr/images/m/calendar_bg.png) no-repeat;}
 
 .cc .calendar .month {height:118px;font-size:30px;color:#fff;text-align:center;font-weight:600}
 
@@ -682,7 +685,6 @@ a { -webkit-tap-highlight-color:transparent;}
 
 .review_search .category li {float:left}
 
-.review_Bigtab {float:left;}
 
 /*** 공지사항 */
 #board {float:left;width:720px;margin-bottom:40px}
@@ -729,9 +731,9 @@ a { -webkit-tap-highlight-color:transparent;}
 /*** 1:1문의 */
 
 #myqnaWrap { position:absolute; z-index:99999; width:0;}
-  
+
 #myqna_pop {position:relative;width:720px;}/***left:-720px; display:none;*/
-  
+
 #myqna_pop .myqna_t {float:left;width:615px;border:20px solid #866b56; background-color:#FFF}
 
 #myqna_pop .myqna_t h3 {padding-left:20px;font-size:30px;font-weight:600;color:#694932;line-height:3}
@@ -806,15 +808,15 @@ a { -webkit-tap-highlight-color:transparent;}
 
 #footer .add {position:absolute;top:70px;right:0;padding-top:20px;width:498px;height:136px;text-align:left;line-height:1.5}
 
-#footer .copy {position:absolute;top:226px;left:0;width:720px;height:30px;text-align:center}
+#footer .copy {position:absolute;top:261px !important;left:0;width:720px;height:30px;text-align:center}
 
-#footer .link2 {position:absolute;top:276px;left:0;width:720px;height:66px;color:#7f5e3d;border-top:2px solid #7f5e3d;border-bottom:2px solid #7f5e3d}
+#footer .link2 {position:absolute;top:308px !important;left:0;width:720px;height:66px;color:#7f5e3d;border-top:2px solid #7f5e3d;border-bottom:2px solid #7f5e3d}
 #footer .link2 ul {clear:both;margin:auto;width:550px;height:66px}
 #footer .link2 a {color:#7f5e3d;text-decoration:none}
 #footer .link2 li {float:left;width:170px;height:66px;text-align:center;line-height:3}
 #footer .link2 .line {width:20px;height:66px;text-align:center}
 
-#footer .tel {position:absolute;top:326px;left:0;width:720px;height:22px;line-height:4.5;text-align:center}
+#footer .tel {position:absolute;top:350px !important;left:0;width:720px;height:22px;line-height:4.5;text-align:center}
 
 
 .paging {margin:20px 0;float:left;width:720px;height:51px;text-align:center;color:#858585}
@@ -823,7 +825,7 @@ a { -webkit-tap-highlight-color:transparent;}
 .paging .on {color:#76a33d;font-weight:600;font-size:32px}
 .paging .on a {color:#76a33d}
 
-.star {font-size:30px;color:#76a33d;font-weight:600; }
+.star {font-size:30px;color:#76a33d;font-weight:600}
 
 .size23 {font-size:23px}
 
@@ -831,7 +833,7 @@ a { -webkit-tap-highlight-color:transparent;}
 .orange {color:#f06041}
 .green {color:#5e9500}
 .g_tit {margin-top:50px;padding-left:20px;color:#5e9500;font-size:28px;font-weight:600;line-height:2}
-.b_tit {float:left;margin-top:30px;padding-left:20px;color:#694932;font-size:28px;font-weight:600;line-height:2}
+.b_tit {margin-top:50px;padding-left:20px;color:#694932;font-size:28px;font-weight:600;line-height:2}
 
 .btn {float:left;padding-top:20px;width:720px;height:100px;text-align:center}
 
@@ -861,7 +863,7 @@ a { -webkit-tap-highlight-color:transparent;}
 
 .b_line {float:left;width:720px;height:2px;background:#ebebeb}
 
-.btn_login {display:block;width:200px;height:125px;line-height:4.5;border:1px solid #5e9500;border-radius:10px;background:#5e9500;color:#fff;text-align:center;font-size:27px;font-weight:600;}
+.btn_login {display:block;width:200px;height:125px;line-height:4.5;border:1px solid #5e9500;border-radius:10px;background:#5e9500;color:#fff;text-align:center;font-size:27px;font-weight:600}
 .btn_login a {display:block;width:200px;height:125px;line-height:4.5;color:#fff;text-decoration:none}
 
 .btn_login2 {display:block;width:680px;height:75px;line-height:2.8;border:1px solid #8abb4e;border-radius:10px;background:#8abb4e;color:#fff;text-align:center;font-size:27px;font-weight:600}
@@ -887,7 +889,7 @@ a { -webkit-tap-highlight-color:transparent;}
 
 .upload_btn { position:relative;float:left;overflow:hidden;background-image:url('http://static.nurisoop.co.kr/images/m/btn_imgplus.png');width:83px;height:83px}
 .upload_btn input { position:absolute;margin-left:-10px;filter:alpha(opacity=0);opacity:0;-moz-opacity:0;cursor:pointer;width:83px;height:83px;}
-
+.footer_customer {float:left;width:720px;text-align:center; }
 
 
 
@@ -925,7 +927,7 @@ a { -webkit-tap-highlight-color:transparent;}
 
 
 /*** 로그인 팝업 */
-#login_pop_wrap {position:relative;width:720px;}/***left:-720px; display:none;*/  
+#login_pop_wrap {position:relative;width:720px;}/***left:-720px; display:none;*/
 #login_pop_wrap .close {float:right;width:65px;height:65px}
 
 #login_pop {float:left;width:615px;border:20px solid #866b56; background-color:#FFF;font-size:25px;text-align:left;line-height:1.5}
@@ -973,7 +975,7 @@ a { -webkit-tap-highlight-color:transparent;}
 #mainList .mainMore {margin:25px 0 25px 10px; width:700px; line-height:50px; background:#a09f9f; border-radius:3px; font-size:24px; color:#fff; text-align:center; font-weight:600}
 #mainList .mainMore a {color:#fff; text-decoration:none}
 
-#gnbWrap2 .type3	{width:33.3%;}
+#gnbWrap2 .type3	{width:25%;}
 
 .goods_info4 {position:relative;width:100%;height:260px;border-bottom:2px solid #ebebeb}
 .goods_info4 a {color:#4a4a4a;text-decoration:none}
@@ -1025,641 +1027,78 @@ a { -webkit-tap-highlight-color:transparent;}
 #join_t2 .notice {float:left;display:block;margin-bottom:15px;font-size:20px;color:#f06041}
 #join_t2 .h60 {height:60px}
 
-/*장바구니*/
-.cart_etcTit {float:left; margin:30px 0; padding:0 20px; width:680px; line-height:60px; background:#f9f6f4; border-top:2px solid #bfa182; border-bottom:2px solid #bfa182; color:#997754; font-size:30px; font-weight:600; text-align:left}
-.giftList {float:left; padding:0 20px; width:680px; font-weight:600; font-size:28px}
-.giftList .thum {width:194px; height:194px; border:1px solid #bfbfbf}
-.giftList .txt {color:#646464}
-.giftList .discount {color:#ea0001}
-.giftList .btn_Shopping a {display:inline-block; background:#8abb4e; color:#fff; text-align:center; float:right; width:270px; height:70px; line-height:70px; border-radius:10px; text-decoration:none}
-.giftList p {line-height:70px}
-.cart_recommend {float:left; width:720px}
-.cart_recommend .list ul {float:left; width:720px; height:400px}
-.cart_recommend .list li {position:relative; float:left; width:240px; height:400px; text-align:center; font-size:22px; color:#4a4a4a; font-weight:600}
-.cart_recommend .list li a {color:#4a4a4a; text-decoration:none}
-.cart_recommend .price {color:#f06041}
-.cart_recommend .del {color:#aaa9a9}
-.cart_recommend .slideBtn {margin-top:10px; float:left; width:720px; height:16px; text-align:center}
-.cart_recommend .cart {position:absolute;top:310px;right:30px;width:80px;height:79px;}
-.cart_recommend .review {padding-top:20px;position:absolute;top:310px;left:30px;width:80px;height:59px;background:url(http://static.nurisoop.co.kr/images/m/btn_review.png) no-repeat;color:#fff;font-weight:600;text-align:center}
-.cart_recommend .ea {margin:auto; margin-top:10px}
-.cartPlus {float:left; width:720px} 
-.cartPlus .comment {float:left; margin-bottom:20px; padding:10px; width:700px; line-height:33px; letter-spacing:-0.5px; background:#e9e9e9; text-align:left; font-size:24px; color:#4a4a4a; font-weight:600}
-.carPlus_tit {margin:auto; margin-top:20px; padding:20px; width:640px; line-height:40px; border:1px solid #694932; font-size:30px; letter-spacing:-0.5px; font-weight:600; color:#694932; text-align:center} 
-.photoList .thum{width:162px}
-.btn_address{}
-.btn_address{}
-.btn_address a {border:1px solid #e6e6e6; margin-left:7px; color:#727272;text-decoration:none; float:left; font-size:20px; text-aligN:center; border-radius:5px; width:130px; height:45px;background:#f1f0f0;text-align:center;line-height:2.2;}
-.app_pric{background:#ffffe7}
-.app_price{font-size:40px; color: #f41c1c; font-weight: 600; letter-spacing:-1.5px}
-.app_price_s{font-size:25px; color: #5f605a; font-weight:600; letter-spacing:-1.5px}
-.price_s_t{font-size:30px; color:#4a4a4a; font-weight:600; margin-left:8px}
-.app_sale_icon{position:absolute; right:30px; top:75px}
 
-/*상세페이지 내 상품후기 개선 20161017 */
-.review_icon {position:absolute; right:25px; bottom:30px;}
-.review_icon a {font-size:21px; text-align:center; text-decoration:none; color:#694932}
-.detail_write_btn a{width:700px; margin-left:10px; height: 57px; line-height: 2.2; background: #5e9500; color:#fff; text-align: center; display: block; border-radius: 10px; text-decoration:none; font-weight:bold}
-.detail_writ_me{width:720px; float:left;}
-.detail_writ_me span{float:left; height:85px; line-height:3.3; text-align: center;}
-.detail_writ_me span.line{    border-right: 1px solid; width: 0px; height: 34px; margin-top: 21px; color: #bebebe;}
-.detail_writ_me span.on a{float:left; width:358px; height:85px; line-height:3.3; text-align: center; text-decoration:none; color:#76a33d; font-weight:600}
-.detail_writ_me span a{float:left; width:358px; height:85px; line-height:3.3; text-align: center; text-decoration:none; color:#6d6d6d; font-size:24px; font-weight:bold;}
+/* 안카, 여행 회원대상 무료샘플킷 이벤트*/
+ #samplekit_wrap{width:720px; margin: 0 auto; overflow: hidden; }
+ #samplekit_wrap .samplekit_join{float:left; width:720px; height:585px; background:url(http://static.nurisoop.co.kr/images/event/20160727/img02_02.jpg)no-repeat; position:relative}
+ #samplekit_wrap .samplekit_join_t{floaT:left; width:620px; position:absolute; top:120px; left:50px}
+ #samplekit_wrap .samplekit_join_t th {padding-left:20px;height:90px;line-height:1.5;font-size:25px;color:#694932;font-weight:600}
+ #samplekit_wrap .samplekit_join_t td {padding-left:20px;height:90px;line-height:1.5;font-size:25px;color:#4a4a4a;letter-spacing:-0.5px}
+ #samplekit_wrap .samplekit_join_t .h60 {height:60px}
+ #samplekit_wrap .samplekit_join_t .h120 {height:120px}
+ #samplekit_wrap .error_txt11{color:#ec4c3e}
+ #samplekit_wrap .agree_ck{background:#f8f3dd; padding-bottom:40px}
+ #samplekit_wrap .agree_ck .agree_box{width:648px; height:138px; background:#fff; border:1px solid #d0cfce; margin:auto}
+ #samplekit_wrap .agree_ck .agree_box .titebox{width:648px; height:56px; background:#e0e0e0; line-height:2.0; font-size:25px}
+ #samplekit_wrap .agree_ck .agree_box .titebox h3{margin-left:20px}
+ #samplekit_wrap .leftbox{float:left; font-size:25px; margin-left:20px; margin-top:15px; line-height:1.8}
+ #samplekit_wrap .rightbox{float:right; font-size:25px; margin-top:15px; line-height:1.8; margin-right:20px;}
+ #samplekit_wrap .rightbox a{font-size:25px; color:#777777; font-style:none;}
 
-/* 앱설치 후 알림설정 팝업창 20161025 */
-#notice_pop {position:absolute; z-index:99999; left:10%; top:10%; margin:auto; width:80%; background:#fff; border-radius:5px; color:#535252; letter-spacing:-0.3px}
-#notice_pop .closew {position:relative; float:left; width:100%; height:20px; z-index:500}
-#notice_pop .closew .close {position:absolute; top:7px; right:10px}
-#notice_pop .notice_pop_title{ position:relative; margin:auto; width:90%; text-align:center; }
-#notice_pop .notice_pop_title .txt{ font-size:1.000em; font-weight:bold; line-height:1.4; margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid #e9e9ea;}
-#notice_pop .notice_pop_txt{margin:auto; width:80%; text-align:center; color:#333333;  line-height:1.3; margin-top:15px}
-#notice_pop .notice_pop_txt .txt1{font-size:0.813em; margin-top:15px; line-height:1.6;}
-#notice_pop .notice_pop_rtxt {text-align:center; margin-top:10px;}
-#notice_pop .notice_pop_rtxt a{text-align:center; color:#2d2d2d; font-size:0.813em; font-weight:600; text-decoration:underline; }
-#notice_pop .btnn {clear:both; margin:auto; width:100%;}
-#notice_pop .btnn .bt a{text-decoration:none; display:inline-block; width:100%; line-height:90px; height:90px; font-weight:bold; text-align:center; letter-spacing:-0.5px; font-size:2.000em; background:#76a33d; color:#fff; border-radius:0px 0 5px 5px; margin-top:20px}
-#notice_pop2 {position:absolute; z-index:99999; left:10%; top:10%; margin:auto; width:80%;}
-#notice_pop2 .join_pop_btn{width:100%; padding:3% 0; background:#e2e2e2; display: inline-table;}
-#notice_pop2 .join_pop_btn01{margin-left:5%; float:left; width:30%; background:#e2e2e2; }
-#notice_pop2 .join_pop_btn02{margin-right:5%; float:right; width:58%; background:#e2e2e2;  }
-/* 앱설치 후 알림설정 팝업창 20161025 */
+ #samplekit_wrap .samplekit_complete{float:left; width:720px; height:560PX; background:url(http://static.nurisoop.co.kr/images/event/20160727/img03_01.jpg)no-repeat; position:relative}
+ #samplekit_wrap .samplekit_complete .txt{position:absolute; top:400px; font-size:28px; text-align:center; line-height:1.4; width:720px; letter-spacing:-2}
+ #samplekit_wrap .samplekit_complete .txt .we{font-weight:600}
+ #samplekit_wrap .samplekit_complete .txt .co{color:#ff4e00}
+ #samplekit_wrap .g_tit {padding-top:520px;padding-left:20px;color:#5e9500;font-size:28px;font-weight:600;line-height:2}
+ #samplekit_wrap .order_t {margin:auto;width:680px;border-top:2px solid #ebebeb;}
+ #samplekit_wrap .order_t td {padding-left:20px;line-height:2;border-bottom:2px solid #ebebeb;font-size:23px;color:#4a4a4a}
+ #samplekit_wrap .order_t th {padding-left:20px;line-height:3;border-bottom:2px solid #ebebeb;background:#fafafa;font-size:23px;color:#694932;font-weight:600}
 
-/*게릴라이벤트*/
-
-.eventGoods{width:100%;height:auto;}
-.eventGoods ul{clear:both;width:100%;height:100%;padding-top:25px;margin-top:25px;}
-.eventGoods li{width:210px;float:left;padding:10px 14px 20px 0px; border:1px solid #bdbdbd;text-align:center;}
-.line-li{border-left:1px solid #bdbdbd;}
-.eventGoods li img{vertical-align:middle;}
-
-/*앱설치유도 팝업 20161102 */
-#pop_app {position:relative; float:left; width:100%; padding-top:120px; text-align:center; -webkit-tap-highlight-color:rgba(0,0,0,0)}
-#pop_app .close {position:fixed; top:5px; right:5px; z-index:9}
-#pop_app .all {position:absolute; top:0; right:0}
-#pop_app .btn {position:fixed; bottom:0; right:0}
+ #samplekit_pop{width:494px; margin: 0 auto; overflow: hidden; border:3px solid #e0e0e0;position:relative}
+ #samplekit_pop .samplekit_txt{font-size:18px; line-height:1.5; padding:20px}
+ #samplekit_pop .title3{height:50px; background:#e0e0e0; font-size:23px; text-align:center; line-height:2.1; font-weight:bold; }
+ .samplekit_pop_closebt{position:absolute; top:7px; right:10px}
 
 
+ /* 무료샘플킷신청 이벤트 수정 - 20160812*/
+  #samplekit_wrap{width:720px; margin: 0 auto; overflow: hidden; }
+  #samplekit_wrap1{width:720px; margin: 0 auto; overflow: hidden; background:#f8f3dd}
+  #samplekit_table_w{width:620px; border-radius:20px; padding:20px; border:7px solid #cfcfcf; margin:auto; background:#fff; margin-bottom:20px;}
+  #samplekit_table_w .samplekit_table th {padding:15px 0 15px 15px; line-height:1.5;font-size:25px; color:#694932; font-weight:600; border-bottom:1px solid #ebebeb}
+  #samplekit_table_w .samplekit_table td {padding:15px 0 15px 15px; line-height:1.5;font-size:25px; color:#4a4a4a; letter-spacing:-0.5px; border-bottom:1px solid #ebebeb}
+  #samplekit_table_w .samplekit_table td .error_txt{font-size:23px; }
+  #samplekit_wrap1 .btnw {float:left;padding-top:20px; width:720px;height:100px;text-align:center}
+  #samplekit_wrap1 .btnw .cancels {float:left;display:block;margin-left:115px;width:230px;height:80px;letter-spacing:-0.5px;line-height:2.9;border:1px solid #d9d9d9;border-radius:10px;background:#929292;color:#fff;text-align:center;font-size:26px;font-weight:600}
+  #samplekit_wrap1 .btnw .cancels a{display:block;width:230px;height:80px;letter-spacing:-0.5px;line-height:2.9;color:#fff;text-decoration:none}
+  #samplekit_wrap1 .btnw .writes {float:left;display:block; margin-left:10px;width:230px;height:80px;letter-spacing:-0.5px;line-height:2.9;border:1px solid #e33b00;border-radius:10px;background:#e33b00; color:#fff;text-align:center;font-size:26px;font-weight:600}
+  #samplekit_wrap1 .btnw .writes a{display:block;width:230px; height:80px;letter-spacing:-0.5px;line-height:2.9;color:#fff;text-decoration:none; }
 
 
-/* 친구추천이벤트 페이지-2016-11-28 */
-#frevent_wa { position: relative; margin: auto; width:100%;height:auto;overflow:hidden; background: #fff; color: #535252;}
-#frevent_wa .fr_event_img03{ width:700px; height:65px;padding:0;margin-left:10px;}
-#frevent_wa .fr_event_img03 .code{ margin:auto; text-align:center; vertical-align:top; margin-top:-5px;}
-#frevent_wa .fr_event_img03 .code .cotx{font-size:24px; font-weight:600; padding:0; letter-spacing:-1.0px; margin-right:5px; color:#999999}
-#frevent_wa .fr_event_img03 .code .nutx{font-size:24px; font-weight:600; padding:0; color:#1e1e1e; letter-spacing:0.1px}
-#frevent_wa .btn{ width:100%;padding:0;margin-top:30px;height:auto;}
-.point-top-btn{position: absolute; right:10px; top:10px; border-radius:5px; border:1px solid #bbbbbb; width:63px; height:25px; font-size:12px; color:#777777; cursor:pointer}
-.point-top-btn .btn-txt{color:#777777; height:15px; margin-top:-9px; display:block}
-#frevent_wa .btn .ka_btn{float:left; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b2022; cursor:pointer; background:#fee600;border-radius:5px; border:1px solid #f0dd25}
-#frevent_wa .btn .ka_btn .btn-img{width:100%; background:#fed60c; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#frevent_wa .btn .kas_btn{float:right; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b2022; cursor:pointer; background:#fccb00; border-radius:5px; border:1px solid #f0dd25}
-#frevent_wa .btn .kas_btn .btn-img{width:100%; background:#fab800; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#frevent_wa .btn .fa_btn{float:left; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b589d; cursor:pointer; background:#3b589d; border-radius:5px; border:1px solid #3c5690; color:#fff}
-#frevent_wa .btn .fa_btn .btn-img{width:100%; background:#314187; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#frevent_wa .btn .sms_btn{float:right; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b589d; cursor:pointer; background:#368efb; border-radius:5px; border:1px solid #368efb; color:#fff}
-#frevent_wa .btn .sms_btn .btn-img{width:100%; background:#2d5ed0; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#frevent_wa .btn .url_btn{float:left; heIGHT:90px; width:99.6%; margin-bottom:5px; color:#3b589d; cursor:pointer; background:#33cdf4; border-radius:5px; border:1px solid #33cdf4; color:#fff}
-#frevent_wa .btn .url_btn .btn-img{width:100%; background:#12add4; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#frevent_wa .btn img{height:29px;width:29px;margin:0 auto;padding-top:7px;}
-#frevent_wa .btn .btn-txt{margin-top:58px; text-aligN:Center; display:block; font-size:20; font-weight:600; line-height:1.2;  letter-spacing:-1px; width:100%}
-#frevent_wa .btn .fr_btn{heIGHT:38px; width:98%; margin-bottom:5px; color:#3b589d; cursor:pointer;background:#d8433f; border-radius:5px; border:1px solid #af1a16; color:#fff}
-#frevent_wa .btn .fr_btn .btn-img{width:45px; background:#c4312d; height:38px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-.important{float:left;width:100%;height:140px;text-align:left;}
+  #samplekit_table_w .samplekit_table1 th {padding:7px 0 7px 25px; line-height:1.5;font-size:25px; color:#694932; font-weight:600;}
+  #samplekit_table_w .samplekit_table1 td {padding:7px 0 7px 0px; line-height:1.5;font-size:25px; color:#4a4a4a; letter-spacing:-0.5px; }
+  #samplekit_table_w .samplekit_table1 td .error_txt{font-size:23px; }
+  .elogin {float:left;display:block; margin-left:10px;width:168px;height:125px;letter-spacing:-0.5px;border:1px solid #e33b00;border-radius:10px;background:#e33b00; color:#fff;text-align:center;font-size:26px;font-weight:600}
+  .elogin a{display:block;width:168px;height:125px;letter-spacing:-0.5px;line-height:4.5;color:#fff;text-decoration:none;text-align:center }
 
-/*친구추천이벤트 페이지-2016-12-20*/
+  #agree_w{width:720px; background:#f8f3dd; padding-bottom:20px; float:left }
+  #agree_w ul{width:620px; margin:auto;}
+  #agree_w ul li{width:620px; margin-top:20px; floaT:left}
+  #agree_w ul h3{font-size:25px; color:#6c4832; float:left; margin-top:15px}
+  #agree_w ul li .rightbox{float:right; font-size:25px;}
+  #agree_w ul li .terms_box{float:left; position: relative; width:618px;height:40px; margin-top:5px; padding: 8px 10px; line-height:1.5; background: #fff; overflow: auto; border:1px solid #cfcfcf}
 
-#frevent_wa  .fr_s_coupon{height:400px;margin-top:40px;}
-#frevent_wa .fr_s_coupon img{display:block;width:607px;height:131px;margin:15px auto;text-align:center;}
-#frevent_wa .fr_s_coupon p.p01 {font-size:30px;font-weight:700;color:#333;text-align:center;line-height:40px;padding:0;margin:0;margin-top:30px;}
-#frevent_wa .fr_s_coupon p.p02{font-size:24px;font-weight:500;color:#8e8e8e;text-align:center;padding:0;margin:0;margin-bottom:20px;}
-
-
-
-/*친구추천 이벤트 메인 추천인코드 입력 창*/
-
- *:focus { outline:none; }
-#fr_eventWrap{width:100%;height:100%;position:fixed;background:url('http://static.nurisoop.co.kr/images/m/fr_eventBg.png') repeat;z-index:99999;top:0;left:0;}
-#fr_eventWrap .fr_event_input{width:600px;height:490px;background:#fff;position:absolute;left:50%;top:150px;margin-left:-300px;border-radius:25px;padding-top:20px;}
-#fr_eventWrap .fr_event_input p{font-size:32px;font-weight:600;text-align:center;line-height:48px;margin-top:10px;color:#18aa61;}
-#fr_eventWrap .fr_event_input .fr_event_code{width:500px;height:70px;border:3px solid #18aa61;margin:20px auto;}
-#fr_eventWrap .fr_event_input .fr_event_code input{width:500px;height:70px;border:none;font-size:30px;font-weight:700;text-align:center;outline:none;text-decoration:none;outline-style:none;-webkit-border-radius:0;appearance:0; -webkit-appearance: none;
-   -webkit-border-radius: 0;webkit-appearance: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;background:#fff;}
-#fr_eventWrap .fr_event_input .fr_event_btnBox input{width:200px;height:70px;text-align:center;font-size:30px;font-weight:700;padding:0;color:#fff;background:#16a05b;border:none;appearance:0; -webkit-appearance: none;
-   -webkit-border-radius: 0;}
-#fr_eventWrap .fr_event_input .fr_event_btnBox input.fr_event_pass{margin-right:10px;background:#b5b5b5;appearance:0;  -webkit-appearance: none;
-   -webkit-border-radius: 0;}
-
-.s_couponImg{width:400px;margin:0 auto;}
-.s_couponImg img{width:100%;}
-#fr_eventWrap .fr_event_input > p.text02{height:40px;font-size:24px;font-weight:normal;color:#717171;}
-
-/*쿠폰발급팝업창*/
-input:focus {
-  outline: none;
-}
-#fr_eventWrap .fr_cupon_issueWrap{width:600px;height:350px;position:absolute;top:150px;left:50%;margin-left:-300px;border-radius:25px;background:#fff;text-align:center;}
-#fr_eventWrap .fr_cupon_issueWrap p.text01{font-size:35px;font-weight:800;margin-top:20px;line-height:45px;}
-#fr_eventWrap .fr_cupon_issueWrap p.text01 span{color:#129554;}
-#fr_eventWrap .fr_cupon_issueWrap p.text02{margin-top:45px;font-size:24px;}
-#fr_eventWrap .fr_cupon_issueWrap p.identify_Btn{margin-top:25px;}
-#fr_eventWrap .fr_cupon_issueWrap p.identify_Btn input{width:450px;height:60px;border-radius:0;text-align:center;font-size:28px;font-weight:600;color:#fff;background:#129554;border:none;cursor:pointer;appearance:0;  -webkit-appearance: none;
-   -webkit-border-radius: 0;}
-#fr_eventWrap .fr_cupon_issueWrap > img{width:586px;height:127px;margin:0 auto;}
-
-
-/*휴대폰인증 페이지*/
-#mobile{width:720px;height:100%;}
-#mobile .mobile_title{width:100%;height:50px;border:1px solid #e2e2e2;background:#f3f3f3;font-size:25px;text-align:center;line-height:45px;font-weight:600;color:#6f6f6f;font-family: 'Noto Sans KR', sans-serif;}
-#mobile .mobile_title span{position:absolute;right:50px;border-radius:50%;width:40px;height:40px;text-align:center;background:#fff;line-height:40px;text-align:center;margin-top:5px;border:1px solid #e2e2e2;cursor:pointer;}
-#mobile .mobile_contents{width:100%;height:100%;text-align:center;}
-#mobile .mobile_contents .b_txt{margin-top:55px;font-size:50px;font-weight:600;color:#149d59;}
-#mobile .mobile_contents .m_txt{margin-top:15px;font-size:35px;font-weight:600;}
-#mobile .mobile_contents .s_txt{margin:20px 0px 30px 0px;font-size:26px;line-height:38px;}
-#mobile .mobile_contents .s_txt span{font-weight:700;color:#149d59;}
-#mobile .mobile_contents .certification_box{width:600px;height:280px;margin:0 auto;}
-#mobile .mobile_contents .certification_box .mobileBox{float:left;width:280px;height:280px;border:1px solid #bfbfbf;background:#f9f9f9;cursor:pointer;}
-#mobile .mobile_contents .certification_box .ipinBox{float:right;width:280px;height:280px;border:1px solid #bfbfbf;background:#f9f9f9;cursor:pointer;}
-#mobile .mobile_contents .certification_box p.icon{width:93px;height:93px;margin:0 auto;margin-top:25px;}
-#mobile .mobile_contents .certification_box p.txt01{margin-top:15px;font-size:28px;font-weight:600;}
-#mobile .mobile_contents .certification_box p.txt02{margin-top:15px;font-size:24px;color:#777777;}
-
-/* 메인 팝업 수정 */
-.fr_box{display: table; position: fixed; top: 0; left: 0; width: 100%; 
-	height: 100%;	z-index:99999; 
-	background:url('http://static.nurisoop.co.kr/images/m/fr_eventBg.png') repeat;}
-.event_row {display: table-row;}
-.fr_event_pop {display: table-cell; vertical-align: middle; position:relative; z-index:99999; }
-.fr_event_pop a {display: block; margin: 0 auto; width: 80%;}
-.fr_event_pop a img {width: 100%; border: none;}
-.fr_event_pop .close{position: relative; top: -1px; background:#fff; letter-spacing: -0.5px; padding: 1.5% 0; width: 80%; margin: 0 auto;}
-.fr_event_pop .close .close7 {width: 100%; text-align: center;}
-.fr_event_pop .close .check1{-webkit-border-radius:1px; -webkit-appearance:none; position: absolute; border: none; width: 0; height: 0; padding: 0;}
-.fr_event_pop .close .clsBtn, .fr_event_pop .close .txt {display: inline-block; font-weight: 500; font-size:34px; cursor: pointer; float: left; text-align: center; line-height: 2em; background: #EBEBEB; border-radius: 3px; margin-left: 1.5%; height: 69px; color:#4F4F4F; font-family: "nanungothic", "Malgun Gothic", dotum, sans-serif; letter-spacing: -1px; text-decoration: none;}
-.fr_event_pop .close .txt {position: relative; width: 59%;}
-.fr_event_pop .close .clsBtn {width: 36.5%;}
-.clr:after {content: ""; display: block; clear: both;}
-
-/* 마이페이지 > 적립금 2016-11-28 */
-#my_point {width:100%; margin:auto; }
-#my_point .topinfo{width:100%; border-bottom:1px solid #999999; float:left;}
-#my_point .topinfo li{float:left; padding:10px 13px}
-#my_point .topinfo li.topinfo_left{border-right:1px solid #999999; width:41%;}
-#my_point .topinfo li.topinfo_right{width:42%;}
-#my_point .topinfo li .txt{font-size: 0.938em; font-weight:600; color:#555555}
-#my_point .topinfo li .txtmo{floaT:right; color:#f15d28; font-weight:600; font-size:1.2em}
-#my_point .topinfo li .txt .ststx{font-size: 0.8em; font-weight:600; color:#888888}
-#my_point .tipwa{width:94%;float: left; padding: 0 3%; margin:20px 0}
-#my_point .tipwa .tipw{width:100%;}
-#my_point .tipwa .tipw .tit{width:100%; background:#ff8a00; color:#fff; font-weight:600; font-size:1.05em; text-align:center; letter-spacing:-1.0px; padding:7px 0}
-#my_point .tipwa .tipw .tit .tipstx{color:#f6ff00;}
-#my_point .tipwa .tipw .wapa{ height:100%; border:2px solid #ff8a00; padding:5% 4%;}
-#my_point .tipwa .tipw .wapa .tiptxt{color:#555555;  font-size:0.95em; line-height:1.5; letter-spacing:-0.6px;  text-align:center;}
-#my_point .tipwa .tipw .wapa .tiptxt2{color:#555555;  font-size:0.95em; line-height:1.5; letter-spacing:-0.6px;  text-align:center; padding-bottom: 10px}
-#my_point .tipwa .tipw .wapa .tiptxt .txt-g{color:#999999; font-size:0.875em; line-height:1.4; display:block}
-#my_point .tipwa .tipw .wapa .tipbtn{color:#3b2022; border:1px solid #f0dd25; border-radius:5px; background:#fee600; padding: 5px 0px;}
-#my_point .tipwa .tipw .wapa .tipbtn_point{padding: 5px 0px;}
-#my_point .tipwa .tipw .wapa .tipbtn span{font-weight:600;}
-#my_point .fr_event_img02{ width:100%; border:1px solid #a0a0a0; border-radius:5px; padding:5px 0; text-align:center; margin-bottom:10px; margin-top:20px}
-#my_point .fr_event_img02 .code{ margin:auto; text-align:center;}
-#my_point .fr_event_img02 .code .cotx{font-size:14px; font-weight:600; padding:0; letter-spacing: -1.0px; color:#999999; margin-right: 5px;}
-#my_point .fr_event_img02 .code .nutx{font-size:16px; font-weight:600; padding:0; color:#1e1e1e; letter-spacing: 0.1px;}
-#my_point .tipbtn{width:100%; text-aligN:center}
-#my_point .tipbtn_point{width:100%; text-aligN:center}
-#my_point .ka_btn{float:left; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b2022; cursor:pointer; background:#fee600;border-radius:5px; border:1px solid #f0dd25}
-#my_point .ka_btn .btn-img{width:100%; background:#fed60c; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#my_point .kas_btn{float:right; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b2022; cursor:pointer; background:#fccb00; border-radius:5px; border:1px solid #f0dd25}
-#my_point .kas_btn .btn-img{width:100%; background:#fab800; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#my_point .fa_btn{float:left; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b589d; cursor:pointer; background:#3b589d; border-radius:5px; border:1px solid #3c5690; color:#fff}
-#my_point .fa_btn .btn-img{width:100%; background:#314187; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#my_point .sms_btn{float:right; heIGHT:90px; width:48%; margin-bottom:10px; color:#3b589d; cursor:pointer; background:#368efb; border-radius:5px; border:1px solid #368efb; color:#fff}
-#my_point .sms_btn .btn-img{width:100%; background:#2d5ed0; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#my_point .url_btn{float:left; heIGHT:90px; width:99.6%; margin-bottom:5px; color:#3b589d; cursor:pointer; background:#33cdf4; border-radius:5px; border:1px solid #33cdf4; color:#fff}
-#my_point .url_btn .btn-img{width:100%; background:#12add4; height:45px; display:block; float:left; border-top-left-radius:5px; border-top-right-radius:5px;}
-#my_point  .fr_btn{float:left;width:98%;}
-
-
-
-
-/*휴대폰인증 페이지*/
-#mobile{width:720px;height:100%;}
-#mobile .mobile_title{width:100%;height:50px;border:1px solid #e2e2e2;background:#f3f3f3;font-size:25px;text-align:center;line-height:45px;font-weight:600;color:#6f6f6f;font-family: 'Noto Sans KR', sans-serif;}
-#mobile .mobile_title span{position:absolute;right:50px;border-radius:50%;width:40px;height:40px;text-align:center;background:#fff;line-height:40px;text-align:center;margin-top:5px;border:1px solid #e2e2e2;cursor:pointer;}
-#mobile .mobile_contents{width:100%;height:100%;text-align:center;}
-#mobile .mobile_contents .b_txt{margin-top:55px;font-size:50px;font-weight:600;color:#149d59;}
-#mobile .mobile_contents .m_txt{margin-top:15px;font-size:35px;font-weight:600;}
-#mobile .mobile_contents .s_txt{margin:20px 0px 30px 0px;font-size:26px;line-height:38px;}
-#mobile .mobile_contents .s_txt span{font-weight:700;color:#149d59;}
-#mobile .mobile_contents .certification_box{width:600px;height:280px;margin:0 auto;}
-#mobile .mobile_contents .certification_box .mobileBox{float:left;width:280px;height:280px;border:1px solid #bfbfbf;background:#f9f9f9;cursor:pointer;}
-#mobile .mobile_contents .certification_box .ipinBox{float:right;width:280px;height:280px;border:1px solid #bfbfbf;background:#f9f9f9;cursor:pointer;}
-#mobile .mobile_contents .certification_box p.icon{width:93px;height:93px;margin:0 auto;margin-top:25px;}
-#mobile .mobile_contents .certification_box p.txt01{margin-top:15px;font-size:28px;font-weight:600;}
-#mobile .mobile_contents .certification_box p.txt02{margin-top:15px;font-size:24px;color:#777777;}
-
-
-
-/*마이페이지 쿠폰 보기*/
-#mypage .tipwa{width:700px;margin:0 auto;padding-top:20px;}
-#mypage .tipwa .tipw{width:100%;}
-#mypage .tipwa .tipw .tit{width:100%; background:#8abb4e; color:#fff; font-weight:600; font-size:30px; text-align:center; letter-spacing:-1.0px; padding:7px 0;border-top-left-radius:5px;border-top-right-radius:5px;}
-#mypage .tipwa .tipw .tit .tipstx{color:#f6ff00;}
-#mypage .tipwa .tipw .wapa{border:2px solid #e1e1e1;border-top:none;background:#fffceb;padding:15px 0px 30px 0px;}
-#mypage .tipwa .tipw .wapa .tiptxt{color:#555555;  font-size:24px; line-height:1.5; letter-spacing:-0.6px;  text-align:center;}
-#mypage .tipwa .tipw .wapa .tiptxt2{color:#555555;  font-size:24px; line-height:1.5; letter-spacing:-0.6px;  text-align:center; padding-bottom: 10px}
-#mypage .tipwa .tipw .wapa .tiptxt .txt-g{color:#999999; font-size:0.875em; line-height:1.4; display:block}
-#mypage .tipwa .tipw .wapa .tipbtn02{width:450px;height:65px;margin:0 auto;color:#3b2022; border:1px solid #f0dd25; border-radius:5px; background:#fee600;text-align:center;font-size:28px;line-height:65px;font-weight:700;cursor:pointer;}
-
-#mypage .tipwa .tipw .couponImg{width:700px;height:auto;margin-top:25px;}
-#mypage .tipwa .tipw .couponImg ul li{width:671px;height:265px;margin:0 auto;background:url(http://static.nurisoop.co.kr/images/m/couponImg.jpg) no-repeat;margin-bottom:15px;}
-#mypage .tipwa .tipw .couponImg ul li p {width:600px;text-align:center;font-size:18px;}
-#mypage .tipwa .tipw .couponImg ul li p.coupon_tit01{font-size:70px;font-weight:900;padding-top:35px;line-height:92px;letter-spacing:-2px;}
-#mypage .tipwa .tipw .couponImg ul li p.coupon_tit02{font-size:25px;font-weight:700;margin-bottom:5px;}
-
-
-
-
-/* 결제수단 20161122 */
-#cart .pay_list{width:96%; margin:auto}
-#cart .pay_list li{width:93%; border:1px solid #cccccc; padding:3%; height:60px; floaT:left; border-radius:5px; margin-bottom:7px}
-#cart .pay_list li .pay_list_icon{floaT:left; display:inline-block; width:8%; margin-right:15px; margin-top:4px}
-#cart .pay_list li .pay_list_txt{floaT:left; font-size:25px; line-height:2.0; letter-spacing:-1.5; color:#3f3f3f; font-weight:600}
-#cart .pay_list li .pay_list_txt_h{floaT:left; font-size:25px; line-height:1.4; color:#3f3f3f; font-weight:600;  width:60%; }
-#cart .pay_list li .pay_list_stxt1{color:#3f3f3f; font-weight:300; font-size:0.875em;}
-#cart .pay_list li .pay_list_stxt{color:#3f3f3f; font-weight:300;}
-#cart .pay_list li .pay_list_caicon{floaT:left; text-align:right; display:inline-block; width:17%; margin-top:4px}
-#cart .pay_list li .pay_list_chicon{floaT:left; display:inline-block; width:5%; margin-top:8px; margin-left:35px}
-#cart .pay_list li.on{width:93%; border:1px solid #f95c24; padding:3%; height:60px; floaT:left;  border-radius:5px; background:#fff8f3}
-#cart .pay_list li.on .pay_list_txt{floaT:left; font-size:25px;  letter-spacing:-1.5; color:#ff4800; font-weight:600}
-#cart .pay_list li.on .pay_list_txt_h{floaT:left; font-size:25px;  letter-spacing:-1.5; color:#ff4800; font-weight:600}
-#cart .pay_btnw{float:left; width:100%; padding:8px 0 15px 0}
-#cart .pay_btnw_bt{width:89%; margin:auto; padding:3%; background:#f95c24; border-radius:5px; color:#fff; text-align:center; font-weight:600; font-size:25px}
-
-
-
-/*161227쿠폰리스트*/
-#mypage_coupon{float:left;width:720px}
-.coupon_List{width:720px;height:65px;padding:0;margin-top:45px;border-top:1px dashed #c7c7c7;padding-top:45px; }
-.coupon_List ul {width:520px;height:90px;margin:0 auto;}
-.coupon_List ul li{float:left;width:250px;height:80px;line-height:80px;text-align:center;margin-right:10px;}
-.coupon_list_btn{width:250px;height:65px;line-height:65px;font-size:25px;text-align:center;
-color:#787878;background:#f7f7f7;border:1px solid #c0c0c0;appearance:0;-webkit-appearance: none;-webkit-border-radius:0;}
-.m_coupon_guide{position:relative;width:720px;height:850px;background:url("http://static.nurisoop.co.kr/images/m/m_coupon_guide.jpg") no-repeat;padding:0;}
-.m_coupon_number{position:absolute;width:600px;height:57px;top:160px;left:50%;margin-left:-300px;}
-.coupon_number, .coupon_number_Btn{float:left;text-align:center;appearance:0;-webkit-appearance: none;-webkit-border-radius: 0;}
-.coupon_number{border-right:0;}
-.coupon_number_Btn{padding:0px;width:100px;height:55px;background:#3e6b12;color:#fff;border:0;}
-
-/*20161227 기존회원 추천인코드입력*/
-.fr_codeWrap{float:left;width:720px;height:500px;margin:20px 0px 50px 0px;padding:0;padding-top:5px;}
-.fr_codeWrap .fr_codeBox{width:680px;height:270px;margin:20px auto;border:6px solid #eeeeee;background:#fff;}
-.fr_codeWrap .fr_codeBox .fr_codeBox_tit {margin-top:40px;font-size:26px;color:#8a969e;font-weight:700;margin-left:85px;}
-.fr_codeWrap .fr_codeBox_input{width:700px;height:80px;margin-top:20px;margin-left:20px;}
-.fr_codeWrap .fr_codeBox_input input.fr_codeinput{width:450px;height:80px;font-size:30px;font-weight:700;}
-#mypage .fr_codeBtn{width:140px;height:80px;appearance:0;-webkit-appearance: none;-webkit-border-radius: 5;background:#5e9500;font-size:28px;color:#fff;font-weight:700;border:none;text-align:center;margin-left:10px;}
-#mypage p.fr_codeBox_txt{margin-top:20px;font-size:18px;color:##5e9500;margin-left:60px;}
-
-.fr_codeBox_tit01{width:400px;height:50px;line-height:50px;border-top-left-radius:15px;border-bottom-right-radius:15px;margin:25px auto;;text-align:center;font-size:35px;font-weight:800;background:#63b944;color:#fff;box-shadow:5px 5px 0px #ade299;}
-
-
-
-/*이벤트페이지 sns*/
-.fr_sns{width:720px;height:500px;}
-.fr_code01_p{width:700px;height:106px;margin:45px auto;}
-.fr_code01_p .fr_code01{width:700px;height:106px;border:6px solid #209804;background:#fff;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px;font-size:40px;text-align:center;font-weight:700;}
-.fr_sns dl{float:left;width:313px;height:150px;margin-left:28px;margin-bottom:15px;}
-.fr_sns dl dt{width:313px;height:50px;background:#fed60c;border-top-left-radius:15px;border-top-right-radius:15px;line-height:50px;text-align:center;}
-.fr_sns dl dt > img{height:40px;margin:0 auto;vertical-align:middle;padding-top:3px;}
-.fr_sns dl dd{display:block;width:313px;height:100px;background:#fee600;border-bottom-left-radius:15px;border-bottom-right-radius:15px;text-align:center;line-height:100px;margin-left:0}
-.fr_sns dl dd a{font-size:28px;font-weight:700;text-decoration:none;color:#333;}
-.fr_sns dl.kas dt{background:#fab800;}
-.fr_sns dl.kas dd{background:#fccb00;}
-.fr_sns dl.fa_btn01 dt{background:#274488;}
-.fr_sns dl.fa_btn01 dd{background:#3b589d;}
-.fr_sns dl.fa_btn01 dd a{color:#fff;}
-.fr_sns dl.sms_btn01 dt{background:#1269d3;}
-.fr_sns dl.sms_btn01 dd{background:#368efb;}
-.fr_sns dl.sms_btn01 dd a {color:#fff;}
-.fr_sns dl.url_btn01{width:650px;}
-.fr_sns dl.url_btn01 dt{width:650px;background:#11add5;}
-.fr_sns dl.url_btn01 dd{width:650px;background:#33cdf4;color:#fff;}
-.point_important{clear:both;width:600px;height:150px;font-size:19px;line-height:28px;margin:10px 0px 0px 35px;}
-.point_important span{font-size:23px;font-weight:700;}
-
-
-/*본인인증완료창*/
-#fr_eventWrap .certification_pop{width:600px;height:250px;position:absolute;top:150px;left:50%;margin-left:-300px;border-radius:25px;background:#fff;text-align:center;}
-#fr_eventWrap .certification_pop p.text01{font-size:35px;font-weight:700;margin-top:50px;line-height:45px;}
-#fr_eventWrap .certification_pop p.text01 span{color:#129554;}
-#fr_eventWrap .certification_pop p.text02{margin-top:45px;font-size:24px;}
-#fr_eventWrap .certification_pop p.identify_Btn{margin-top:25px;}
-#fr_eventWrap .certification_pop p.identify_Btn input{width:450px;height:60px;border-radius:0;text-align:center;font-size:28px;font-weight:600;color:#fff;background:#129554;border:none;cursor:pointer;appearance:0;  -webkit-appearance: none;
-   -webkit-border-radius: 0;}
-
-
-
-/*추천인코드입력창 수정20161229*/
-
-.fr_code_W_Bg{position:fixed;width:100%;height:100%;background:black;opacity:0.8;top:0;z-index:1000001;}
-#fr_code_W{
-	width:600px;
-	height:480px;
-	position:absolute;
-	top:150px;left:50%;
-	margin-left:-300px;
-	z-index:1000002;
-	background:#fff;
-	border-radius:25px;
-	}
-.fr_code_txt_01{
-	font-size: 32px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 48px;
-    margin-top: 25px;
-    color: #18aa61;margin-bottom:20px;
-	}
-.code_fr {width:500px; height: 70px;bordeR:3px solid #16a05b;margin:0 auto;}
-.code_fr input{
-	width:500px;
-    height: 70px;
-    border: none;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    outline: none;
-    text-decoration: none;
-    outline-style: none;
-    -webkit-border-radius: 0;
-    appearance: 0;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    webkit-appearance: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-	}
-.code_fr_s_txt{font-size:25px;color:#a1a1a1;text-align:center;padding-top:25px;}
-.fr_event_btnBox{width:415px;height:70px;margin:0 auto;padding-top:25px;}
-.fr_event_btnBox input{
-	width: 200px;
-    height: 70px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    padding: 0;
-    color: #fff;
-    background: #16a05b;
-    border: none;
-    appearance: 0;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;}
-.fr_event_btnBox input.fr_event_pass{background:#7b7b7b;margin-right:15px;}
-
-/*20170217 친구추천*/
-.fr_event_ver2017{
-	position:relative;
-	width:680px;
-	height:1412px;
-	margin:0 auto;
-	background:url(http://static.nurisoop.co.kr/images/event/20170221/20170221_friendevent_m_new.jpg) no-repeat;
-	}
-.fr_event_ver2017 .my_codes{
-	position:absolute;
-	width:378px;
-	height:51px;
-	bottom:497px;
-	left:146px;
-	}
-.fr_event_ver2017 .my_codes input{
-	width:378px;
-	height:51px;
-	border:3px solid #000;
-	border-radius:5px;
-	background:#f7f7f7;
-	text-align:center;
-	}
-.want_codes{position:absolute;width:583px;height:55px;bottom:375px;left:75px;}
-.want_codes input.codes_write{
-	float:left;
-	display:block;
-	width:340px;
-	height:50px;
-	border:3px solid #000;
-	background:#f7f7f7;
-	border-radius:5px;
-	margin:5px 0px 0px 24px;
-	text-align:center;
-	}
-.want_codes input.codes_button{
-	float:right;
-	display:block;
-	width:131px;
-	height:46px;
-	border-radius:0;
-	margin:7px 80px 0px 0px;
-	background:none;
-	border:none;
-	cursor:pointer;
-	}
-
-.sns_btnBox{position:absolute;width:526px;height:110px;bottom:182px;left:75px;}
-
-.sns_btnBox > div {float:left;width:148px;height:45px;cursor:pointer;}
-.tw_Btn{margin-left:37px;width:152px;}
-.em_Btn{margin-left:39px;}
-.mo_Btn{margin:17px 45px 0px 85px;}
-.li_Btn{margin-top:17px;}
-
-
-/*20170308친추 포인트 수정*/
-
-#frevent_wa01{
-	position:relative;
-	width:720px;
-	height:860px;
-	margin:0 auto;
-	margin-top:110px;
-	background:url(http://static.nurisoop.co.kr/images/m/20170303_friendevent_point_m.jpg) no-repeat;
-	}
-.inputBox{position:absolute;width:565px;height:159px;top:349px;left:58px;}
-.inputBox label.inputBox_code01 input{
-	display:inline-block;
-	width:555px;
-	height:41px;
-	margin-top:2px;
-	font-size:25px;
-	font-weight:600;
-	border-radius:none;
-	border:none;
-	background:none;
-	outline:none;
-	}
-.inputBox label.inputBox_code02{display:inline-block;margin-top:70px;}
-.inputBox label.inputBox_code02 input.codes02{
-	width:401px;
-	height:40px;
-	border-radius:none;
-	border:none;
-	background:none;
-	font-size:25px;
-	}
-.inputBox label.inputBox_code02 input.inputBox_codeBtn{
-	display:inline-block;
-	width:143px;
-	height:43px;
-	margin-left:18px;
-	background:none;
-	border:none;
-	cursor:pointer;
-	}
-.frevent_snsBtn{position:absolute;left:73px;bottom:182px;width:530px;height:110px;}
-.frevent_snsBtn ul li{float:left;width:148px;height:48px;margin:0px 0px 13px 40px;cursor:pointer;}
-.frevent_snsBtn ul li.nor{margin-left:0;}
-.frevent_snsBtn ul li.sms_btn{margin-left:90px;}
-
-/*5000원받기 이벤트*/
-#frevent_wa02{
-	position:relative;
-	width:680px;
-	height:auto;
-	margin:0 auto;
-	}
-.fr_5000event{
-	width:680px;
-	height:1072px;
-	margin:25px auto;
-	background:url(http://static.nurisoop.co.kr/images/m/20170303_friendevent_5000_m.jpg) no-repeat;
-	
-	}
-.fr_event5000{width:563px;height:158px;margin:0 auto;padding-top:350px;}
-
-.fr_event5000 label.event5000_code01 input{
-	display:inline-block;
-	width:555px;
-	height:41px;
-	padding:0;
-	border:none;
-	outline:none;
-	background:none;
-	font-size:25px;
-	font-weight:600;
-	}
-.fr_event5000 label.event5000_code02{display:block;margin-top:75px;}
-.fr_event5000 label.event5000_code02 input.code02_text{
-	display:inline-block;
-	float:left;
-	width:404px;
-	height:38px;
-	border:none;
-	outline:none;
-	background:none;
-	font-size:25px;
-	font-weight:600;
-	}
-.fr_event5000 label.event5000_code02 input.code02_button{
-	display:inline-block;
-	float:right;
-	width:141px;
-	height:44px;
-	border-radius:none;
-	border:none;
-	outline:none;
-	background:none;
-	cursor:pointer;                        
-	}
-.fr_5000event_snsBox{
-	width:530px;
-	height:110px;
-	margin:0 auto;
-	margin-top:63px;
-	}
-.fr_5000event_snsBox ul li{float:left;width:148px;height:49px;margin:0px 0px 11px 38px;cursor:pointer;}
-.fr_5000event_snsBox ul li.nor{margin-left:20px;}
-.fr_5000event_snsBox ul li.smsBtn{margin-left:10px;}
-.code_5000event{width:566px;height:44px;margin:105px auto 0px;}
-.code_5000event input.code_5000event_in{
-	display:inline-block;
-	float:left;
-	width:412px;
-	height:40px;
-	border-radius:none;
-	border:none;
-	outline:none;
-	background:none;
-	margin-right:19px;
-	}
-.code_5000event input.code_5000event_bt{
-	width:134px;
-	height:43px;
-	border-radius:none;	
-	border:none;
-	outline:none;
-	cursor:pointer;
-	background:none;
-	}
-
-.fr_event_popup02{
-	position:relative;
-	width:560px;
-	height:355px;
-	background:url(http://static.nurisoop.co.kr/images/event/20170221/url_pop.jpg) no-repeat;
-	margin:0 auto
-	}
-.fr_event_popup02 p {position:absolute;width:30px;height:30px;top:15px;right:15px;cursor:pointer;}
-.fr_event_popup02 .fr_popCode{position:absolute;width:464px;height:52px;top:180px;left:50px;}
-.fr_event_popup02 .fr_popCode input.fr_popCodetxt{
-	width:324px;
-	height:50px;
-	border-radius:none;	
-	border:none;
-	outline:none;
-	background:none;
-	}
-.fr_event_popup02 .fr_popCode input.fr_popCodeBtn{
-	display:inline-block;
-	float:right;
-	width:127px;
-	height:50px;
-	border-radius:none;	
-	border:none;
-	outline:none;
-	cursor:pointer;
-	background:none;
-	}
-.fr_event_popup03{
-	position:relative;
-	width:600px;
-	height:400px;
-	background:url(http://static.nurisoop.co.kr/images/img/20170303_s_couponImg.jpg) no-repeat;
-	margin:0 auto;
-	}
-.fr_event_popup03 p{position:absolute;width:30px;height:30px;top:15px;right:15px;cursor:pointer;}
-.fr_popCode03{
-	position:absolute;
-	width:502px;
-	height:42px;
-	left:46px;
-	top:248px;
-	}
-.fr_popCode03 input{width:502px;height:42px;border:none;outline:none;background:none;}
-.fr_popCodeBtn{position:absolute;bottom:11px;left:81px;width:447px;height:49px;}
-.fr_popCodeBtn input{width:206px;height:49px;background:none;border:none;cursor:pointer;}
-.fr_popCodeBtn input.nor_btn{display:inline-block;margin-right:30px;}
-
-.fr_event_popup04{
-	position:relative;
-	width:570px;
-	height:362px;
-	background:url(http://static.nurisoop.co.kr/images/img/20170303_s_coupon.jpg) no-repeat;
-	margin:0 auto;
-	}
-.fr_event_popup04 p{position:absolute;width:30px;height:30px;top:15px;right:15px;cursor:pointer;}
-.fr_event_popup04 > .fr_popCodeBtn{position:absolute;bottom:68px;left:218px;width:157px;height:45px;}
-
-/* 170608 앱설치모바일랜딩 */
-#app_landing_m {position:relative; width:device-width;}
-#app_landing_m img{display:block; }
-#app_landing_m .link_01{position:absolute; top:84%; left:13%; width:76%; height:12%;}
+  /* 결제수단 20161122 */
+	#cart .pay_list{width:96%; margin:auto}
+	#cart .pay_list li{width:93%; border:1px solid #cccccc; padding:3%; height:60px; floaT:left; border-radius:5px; margin-bottom:7px}
+	#cart .pay_list li .pay_list_icon{floaT:left; display:inline-block; width:8%; margin-right:15px; margin-top:4px}
+	#cart .pay_list li .pay_list_txt{floaT:left; font-size:25px; line-height:2.0; letter-spacing:-1.5; color:#3f3f3f; font-weight:600}
+	#cart .pay_list li .pay_list_txt_h{floaT:left; font-size:25px; line-height:1.4; color:#3f3f3f; font-weight:600;  width:60%; }
+	#cart .pay_list li .pay_list_stxt1{color:#3f3f3f; font-weight:300; font-size:0.875em;}
+	#cart .pay_list li .pay_list_stxt{color:#3f3f3f; font-weight:300;}
+	#cart .pay_list li .pay_list_caicon{floaT:left; text-align:right; display:inline-block; width:17%; margin-top:4px}
+	#cart .pay_list li .pay_list_chicon{floaT:left; display:inline-block; width:5%; margin-top:8px; margin-left:35px}
+	#cart .pay_list li.on{width:93%; border:1px solid #f95c24; padding:3%; height:60px; floaT:left;  border-radius:5px; background:#fff8f3}
+	#cart .pay_list li.on .pay_list_txt{floaT:left; font-size:25px;  letter-spacing:-1.5; color:#ff4800; font-weight:600}
+	#cart .pay_list li.on .pay_list_txt_h{floaT:left; font-size:25px;  letter-spacing:-1.5; color:#ff4800; font-weight:600}
+	#cart .pay_btnw{float:left; width:100%; padding:8px 0 15px 0}
+	#cart .pay_btnw_bt{width:89%; margin:auto; padding:3%; background:#f95c24; border-radius:5px; color:#fff; text-align:center; font-weight:600; font-size:25px}
